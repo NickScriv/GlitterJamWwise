@@ -171,7 +171,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
-							<Value>2</Value>
+							<Value>3</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
@@ -183,7 +183,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
-							<Value>2</Value>
+							<Value>3</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
@@ -199,7 +199,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Chase" ID="{3D8EBFBE-378E-4664-9EA3-7798E4D24468}"/>
+						<CurrentStateRef Name="Death" ID="{D38B038D-A977-436F-86C0-E9BA2000ACCD}"/>
 						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -543,6 +543,65 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Ambient" ID="{0DD2B4CF-CF59-4829-9306-C3424BE57286}"/>
+						<CurrentStateRef Name="None" ID="{BE906E17-89CD-4E5D-A351-85664F4CC005}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Depleted_Stamina" ID="{B4961FCD-077E-44DF-BF72-394D556844D6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Lock Pick Session" ID="{950A2049-7ADD-4630-BE61-78C729C276D0}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Lock_Picking_Loop" ID="{DC332569-A675-4E73-B622-795BF68B058A}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Lock_Picking" ID="{8EB86CF4-829E-442F-A342-10F9B392ABF4}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Lock_Picking" ID="{4AD5160E-AD7B-4B99-98EA-28BBD8A6342E}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>2</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{75AE232A-E7F6-4AA4-8261-D32297582DA3}"/>
 						<CurrentStateRef Name="None" ID="{BE906E17-89CD-4E5D-A351-85664F4CC005}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

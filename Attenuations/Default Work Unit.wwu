@@ -113,7 +113,7 @@
 				</Attenuation>
 				<Attenuation Name="Enemy Distance" ID="{0EB0C987-C7B1-4D03-ABB4-3570F61E4B61}" ShortID="43435018">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="700"/>
+						<Property Name="RadiusMax" Type="Real64" Value="1500"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -130,7 +130,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>700</XPos>
+											<XPos>1500</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -158,13 +158,13 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>116.666666666667</XPos>
+											<XPos>250.000000000001</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>700</XPos>
+											<XPos>1500</XPos>
 											<YPos>50</YPos>
 											<Flags>37</Flags>
 										</Point>

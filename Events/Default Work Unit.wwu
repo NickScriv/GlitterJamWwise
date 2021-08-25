@@ -321,16 +321,6 @@
 								</Event>
 								<Event Name="Death_Enemy_Sounds" ID="{CFF26DCA-880E-4DFF-95B0-019A5D8628EE}">
 									<ChildrenList>
-										<Action Name="" ID="{026C8847-C8F1-4CE0-A830-0219F21E4C8F}" ShortID="559471108">
-											<PropertyList>
-												<Property Name="Delay" Type="Real64" Value="0.5"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Player_Death" ID="{181E41B3-F612-4454-91D1-D2EA4ED079DC}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 										<Action Name="" ID="{E2FB89E5-E62A-4618-A937-8D0A636469BB}" ShortID="592864403">
 											<PropertyList>
 												<Property Name="ActionType" Type="int16" Value="2"/>
@@ -386,6 +376,29 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Wind_Ambience" ID="{8955BBE4-4FCD-4677-9BF4-3FD1F4D06754}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{824A7361-F92F-4E6B-B187-BFA426BCA7DE}" ShortID="216356404">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="8"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.01"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Lock_Picking_Loop" ID="{DC332569-A675-4E73-B622-795BF68B058A}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D3442B11-EEE4-4A7F-812B-F53D742370B6}" ShortID="721171632">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="8"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.01"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Lock_Picking_Loop" ID="{DC332569-A675-4E73-B622-795BF68B058A}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -594,6 +607,168 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Shotgun" ID="{540C8C13-67A9-484C-A386-A84F36A5C3FB}" ShortID="257625202">
+							<ChildrenList>
+								<Event Name="Shotgun_Fire" ID="{64F87AF7-BE06-4730-B044-DE69101CD601}">
+									<ChildrenList>
+										<Action Name="" ID="{0687D766-1163-4733-BB9A-8E69061A688B}" ShortID="748637262">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Shotgun Fire" ID="{97B53AA6-DC35-4401-8988-444348142C49}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Shotgun_Empty" ID="{916C8C52-0578-4ACC-967C-51849C76AEB3}">
+									<ChildrenList>
+										<Action Name="" ID="{E665DA90-3460-4F2C-9828-B85E1A5B7314}" ShortID="429333925">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Shotgun Empty" ID="{46F96A9D-A69E-4380-AA3C-F14201C37423}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Safe" ID="{6E37AA26-3864-4A5C-92B7-C2BA455CBF03}" ShortID="338207854">
+							<ChildrenList>
+								<Event Name="Safe_Open" ID="{3F7EA851-62EC-4A89-B32C-8C515F0E3F46}">
+									<ChildrenList>
+										<Action Name="" ID="{B36FCA2F-4FFF-4A48-BF31-EF05E9101CE2}" ShortID="953783251">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Safe Open" ID="{3DA3C1B0-15CF-4C44-8A0B-2265C489BD1A}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Safe_Close" ID="{1886F2EC-52FB-47AC-BFD4-49B7A0D6AC92}">
+									<ChildrenList>
+										<Action Name="" ID="{B104C19E-9252-419F-9443-FC891A1DBF0B}" ShortID="185974963">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Safe Close" ID="{E5318CFE-CB56-4A76-ADAB-FF19BB29C6CF}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Lock Pick" ID="{78C284B5-C84B-4772-86FF-F1146FE90549}" ShortID="54701764">
+							<ChildrenList>
+								<Event Name="Play_Lock_Picking" ID="{4AD5160E-AD7B-4B99-98EA-28BBD8A6342E}">
+									<ChildrenList>
+										<Action Name="" ID="{B0C486B8-A44D-4811-A121-875C45F514FA}" ShortID="290161801">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="9"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Lock_Picking_Loop" ID="{DC332569-A675-4E73-B622-795BF68B058A}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Lock_Picking" ID="{8EB86CF4-829E-442F-A342-10F9B392ABF4}">
+									<ChildrenList>
+										<Action Name="" ID="{97A14276-4A56-4A1B-87DE-2349AF0F81B4}" ShortID="293638661">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Lock_Picking_Loop" ID="{DC332569-A675-4E73-B622-795BF68B058A}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Cure" ID="{0559B874-119E-45EE-A5C8-A222AA976524}" ShortID="82870637">
+							<ChildrenList>
+								<Event Name="Inject_Cure" ID="{AE232144-03EF-4B8D-A841-57A71AF05B9F}">
+									<ChildrenList>
+										<Action Name="" ID="{68A81348-0358-4331-93AF-133B38FAB732}" ShortID="383153715">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Inject Cure" ID="{3EA2BFAA-880D-4C62-B395-00BE56B81D82}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Axe" ID="{B7D05930-5EAC-44C0-9E9F-28126B9F76B1}" ShortID="211028054">
+							<ChildrenList>
+								<Event Name="Axe_Swing" ID="{9D5B4F3E-8F3D-466F-BEB6-9B077FE6EF6E}">
+									<ChildrenList>
+										<Action Name="" ID="{C6E8D632-C997-4B3B-B595-47940501D2C9}" ShortID="614414733">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Axe Swing" ID="{A0532F0C-8B02-4211-8AD7-139FA54C8612}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Axe_Hit_Wood" ID="{0F83B289-5058-45DB-BF6D-E0E386EB9075}">
+									<ChildrenList>
+										<Action Name="" ID="{81DD79A8-B05A-4EF4-9DA6-34884E420D86}" ShortID="966783203">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Axe Hit Wood" ID="{E9769E89-64DD-480B-843B-163C5213BF3C}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Axe_Break_Wood" ID="{32C6810A-8BE2-42A3-8D41-C6ECF3EBA2A8}">
+									<ChildrenList>
+										<Action Name="" ID="{3EB8DA77-733B-480A-8E19-56C18A4F755E}" ShortID="203783779">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Axe Wood Break" ID="{6BD248A7-A675-46C9-947C-ABDA66A4B528}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Axe_Hit_Generic_Object" ID="{9CE75E33-075E-4EFD-B863-239939D71EBB}">
+									<ChildrenList>
+										<Action Name="" ID="{032619C9-BF21-4C4A-93E0-A5A506AE531F}" ShortID="76412768">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Axe Hit GenericObject" ID="{4516E7AA-65B4-4B58-961D-99BF98C12E6B}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Axe_Hit_Enemy" ID="{758F7A7D-DDBB-4DD1-9410-FFE2F712C303}">
+									<ChildrenList>
+										<Action Name="" ID="{43593993-A09B-41EB-BB49-FE16C2009694}" ShortID="567746814">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Axe Hit Enemy" ID="{3DD473A8-81ED-48C7-AEFF-AAB884796690}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music Events" ID="{3F475472-6EE3-45FB-B096-5BA7EF4EC678}" ShortID="709763338">
@@ -706,6 +881,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Death" ID="{D38B038D-A977-436F-86C0-E9BA2000ACCD}" WorkUnitID="{B45B1B1A-95EC-4A4A-8ADA-3070219E32FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{026C8847-C8F1-4CE0-A830-0219F21E4C8F}" ShortID="559471108">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Death" ID="{181E41B3-F612-4454-91D1-D2EA4ED079DC}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
