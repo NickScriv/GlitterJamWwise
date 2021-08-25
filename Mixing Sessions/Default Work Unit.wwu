@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E709F7D5-F813-4860-B549-7DA1F83DC46C}" SchemaVersion="103">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{E709F7D5-F813-4860-B549-7DA1F83DC46C}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Music Mixing" ID="{84D2AD84-6DBB-4E28-B6BB-122D3C2AB827}">
+					<ObjectList>
+						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+						<ObjectRef Name="Music" ID="{51EDEBBC-E9CE-4055-A9C7-182D9280173B}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+						<ObjectRef Name="Music Switch" ID="{8794AC86-4755-4117-BFC2-7AF9107B97E5}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+						<ObjectRef Name="Death Music" ID="{847DCD57-40B0-442A-8F4D-880FF01446D6}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+						<ObjectRef Name="Chase Music" ID="{1D112059-7B2A-49A1-9C2F-74F99DF0649C}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+						<ObjectRef Name="Ambient Music Switch" ID="{CCD587D2-B8D2-46F8-9BBE-FCD19F6ADB8A}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+						<ObjectRef Name="Upstairs Ambient Music" ID="{1E215D3E-8FB9-43B9-9C3B-9511C8F3C183}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+						<ObjectRef Name="Chase_Stinger_1" ID="{D1C72720-6AB5-4368-B8DD-35F445D984BC}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+						<ObjectRef Name="Stairwell Ambient Music" ID="{850788A9-0262-43AA-B36F-13ACEF8A3BA0}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EA62193E-8319-4376-8B05-A82D476E67CE}" SchemaVersion="103">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{EA62193E-8319-4376-8B05-A82D476E67CE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music" ID="{D3E5AA02-F58D-4247-924B-0E62B2858033}" ShortID="352024182">
+					<ChildrenList>
+						<Folder Name="Ambient" ID="{DB4C8217-DEA4-490F-AA21-27201C17308D}" ShortID="711929150">
+							<ChildrenList>
+								<SwitchGroup Name="Amb_lvl_4_Switch" ID="{E1690C1B-D106-445B-ACB4-E840863CCA76}">
+									<PropertyList>
+										<Property Name="UseGameParameter" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Switch Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+										<Switch Name="lvl2" ID="{22CDED09-FE8A-462A-B928-0E364762D86B}"/>
+									</ChildrenList>
+									<SwitchOnRTPC>
+										<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+										<Curve Name="" ID="{1B7E02C7-A1E8-4937-8D22-DFE5B760DC97}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="65537"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>1</YPos>
+													<Flags>5</Flags>
+												</Point>
+												<Point>
+													<XPos>3</XPos>
+													<YPos>1</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</SwitchOnRTPC>
+								</SwitchGroup>
+								<SwitchGroup Name="Downstairs_Stairwell_Upstairs_Switch" ID="{F9270738-C416-4445-8F80-3ADBE6FE5C3F}">
+									<PropertyList>
+										<Property Name="UseGameParameter" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Switch Name="Upstairs" ID="{E9207CC0-6DC0-437C-9E99-404CFFCBC1F0}"/>
+										<Switch Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+										<Switch Name="Stairwell" ID="{0CBFA3BB-9A76-4E1A-A2F5-D93D291DB4BA}"/>
+									</ChildrenList>
+									<SwitchOnRTPC>
+										<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+										<Curve Name="" ID="{873220BD-758A-4383-8B92-F8356AF0E0AC}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="65537"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>1</XPos>
+													<YPos>2</YPos>
+													<Flags>5</Flags>
+												</Point>
+												<Point>
+													<XPos>1.001</XPos>
+													<YPos>3</YPos>
+													<Flags>0</Flags>
+												</Point>
+												<Point>
+													<XPos>2.999</XPos>
+													<YPos>1</YPos>
+													<Flags>0</Flags>
+												</Point>
+												<Point>
+													<XPos>3</XPos>
+													<YPos>1</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</SwitchOnRTPC>
+								</SwitchGroup>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{691E4912-1674-439A-8D57-8B50F70F677B}" ShortID="875556063">
+					<ChildrenList>
+						<SwitchGroup Name="Stamina_SwitchGroup" ID="{C81D283F-777E-4022-81F0-F803E819A458}">
+							<PropertyList>
+								<Property Name="UseGameParameter" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Switch Name="High_Stamina" ID="{EE647FF4-6D0C-4CA4-8CDC-5D22A58471C6}"/>
+								<Switch Name="Med_Stamina" ID="{922C16D1-CFA7-4AE4-BB66-6FC4CD0C0488}"/>
+								<Switch Name="Low_Stamina" ID="{8F4CDCF6-7AB2-4B67-9E29-C07CE308478E}"/>
+								<Switch Name="Depleted_Stamina" ID="{B4961FCD-077E-44DF-BF72-394D556844D6}"/>
+							</ChildrenList>
+							<SwitchOnRTPC>
+								<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+								<Curve Name="" ID="{29EC9F05-BB3A-4414-977A-C5120DF4E68B}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>4</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>1</XPos>
+											<YPos>3</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>25</XPos>
+											<YPos>2</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>70</XPos>
+											<YPos>1</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>99.999</XPos>
+											<YPos>1</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>100</XPos>
+											<YPos>1</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</SwitchOnRTPC>
+						</SwitchGroup>
+						<Folder Name="Footsteps" ID="{2C052863-CAD1-453B-A639-70535EE92B86}" ShortID="838000745">
+							<ChildrenList>
+								<SwitchGroup Name="Footsteps_Movement_SwitchGroup" ID="{5D519C31-68D2-419B-8CB0-0F4A72F8A6CD}">
+									<PropertyList>
+										<Property Name="UseGameParameter" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Switch Name="Walking" ID="{5F9D8FC5-52B7-4029-93C8-4EDB4FABA209}"/>
+										<Switch Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+										<Switch Name="Running" ID="{9760308D-F525-4763-8251-3DD4449DB889}"/>
+									</ChildrenList>
+									<SwitchOnRTPC>
+										<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+										<Curve Name="" ID="{6BB5DDDB-E8CE-4C15-A652-BC9DC5B7AE77}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="65537"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>1</XPos>
+													<YPos>2</YPos>
+													<Flags>5</Flags>
+												</Point>
+												<Point>
+													<XPos>2</XPos>
+													<YPos>1</YPos>
+													<Flags>0</Flags>
+												</Point>
+												<Point>
+													<XPos>3</XPos>
+													<YPos>3</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</SwitchOnRTPC>
+								</SwitchGroup>
+								<SwitchGroup Name="Footsteps_Surface_Type" ID="{34E43280-A980-46AE-AD10-CA5B670435F0}">
+									<PropertyList>
+										<Property Name="UseGameParameter" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Switch Name="Wood" ID="{C5196C48-3D97-49A7-AB68-91747D784AAB}"/>
+										<Switch Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+									</ChildrenList>
+									<SwitchOnRTPC>
+										<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+										<Curve Name="" ID="{85B45D59-52DF-4B64-99E8-441673CA1110}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="65537"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>1</XPos>
+													<YPos>1</YPos>
+													<Flags>5</Flags>
+												</Point>
+												<Point>
+													<XPos>2</XPos>
+													<YPos>2</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</SwitchOnRTPC>
+								</SwitchGroup>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Enemy" ID="{F049A81F-991F-4AE7-BB59-2A74A78E9B11}" ShortID="1049550076">
+							<ChildrenList>
+								<SwitchGroup Name="Enemy_Footsteps_Switch" ID="{7E2CD6D2-33CA-4CC5-807D-956B5A96D94C}">
+									<PropertyList>
+										<Property Name="UseGameParameter" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Switch Name="Wood" ID="{9D8E2D44-9D7C-4493-8CE0-ECCB0A375775}"/>
+										<Switch Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+									</ChildrenList>
+									<SwitchOnRTPC>
+										<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+										<Curve Name="" ID="{67721C04-D800-43C3-A5A2-C174242B3CCF}">
+											<PropertyList>
+												<Property Name="Flags" Type="int32" Value="65537"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>1</XPos>
+													<YPos>1</YPos>
+													<Flags>5</Flags>
+												</Point>
+												<Point>
+													<XPos>2</XPos>
+													<YPos>2</YPos>
+													<Flags>37</Flags>
+												</Point>
+											</PointList>
+										</Curve>
+									</SwitchOnRTPC>
+								</SwitchGroup>
+								<SwitchGroup Name="Enemy_Sounds_Switch" ID="{F45FF38F-C78F-490D-96D2-4ECC4263EC73}">
+									<PropertyList>
+										<Property Name="UseGameParameter" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Switch Name="Enemy_Passive" ID="{E10AFD04-0C9C-471D-B9EB-50EE82BE55C0}"/>
+										<Switch Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+									</ChildrenList>
+								</SwitchGroup>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

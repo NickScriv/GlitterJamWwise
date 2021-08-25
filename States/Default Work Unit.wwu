@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B45B1B1A-95EC-4A4A-8ADA-3070219E32FE}" SchemaVersion="103">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{B45B1B1A-95EC-4A4A-8ADA-3070219E32FE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Music States" ID="{BB7040D2-F1E8-446A-8726-4A7FF10F24C6}" ShortID="742766678">
+					<ChildrenList>
+						<StateGroup Name="Music_Sections" ID="{9254CDEE-8738-4B82-9D47-BE26D24FEE7E}">
+							<ChildrenList>
+								<State Name="None" ID="{75AE232A-E7F6-4AA4-8261-D32297582DA3}"/>
+								<State Name="Chase" ID="{3D8EBFBE-378E-4664-9EA3-7798E4D24468}"/>
+								<State Name="Death" ID="{D38B038D-A977-436F-86C0-E9BA2000ACCD}"/>
+								<State Name="Ambient" ID="{0DD2B4CF-CF59-4829-9306-C3424BE57286}"/>
+								<State Name="Secret_Room" ID="{8BD190FA-603E-4ADF-AA82-7E3181E575C2}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+				<StateGroup Name="Enemy_Sounds_States" ID="{94D8F519-D28D-4F09-A6D1-E87E8977674F}">
+					<ChildrenList>
+						<State Name="None" ID="{BE906E17-89CD-4E5D-A351-85664F4CC005}"/>
+						<State Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
+						<State Name="Chase" ID="{EFE4A368-3C66-4FDB-BE33-42A77285E523}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

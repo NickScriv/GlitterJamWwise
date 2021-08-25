@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{44E19453-F159-4C43-AFE9-68CCF53C548C}" SchemaVersion="103">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{44E19453-F159-4C43-AFE9-68CCF53C548C}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="EnemyLF0" ID="{44D9ADA4-0D72-4F4C-8577-56DB20A47652}" ShortID="550849548">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="1.62"/>
+						<Property Name="LfoWaveform" Type="int32" Value="5"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="Enemy LFO 2" ID="{585E8AC0-1A07-4E2D-84E9-A1D685FB846A}" ShortID="396463854">
+					<PropertyList>
+						<Property Name="LfoAttack" Type="Real64" Value="4.11"/>
+						<Property Name="LfoDepth" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3D45536F-40FE-4379-B435-D9FB20A17010}">
+										<PropertyList>
+											<Property Name="Min" Type="Real64" Value="-100"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoFrequency" Type="Real64" Value="1.08">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B73C3EF8-1605-4682-95D8-0C954463E0D4}">
+										<PropertyList>
+											<Property Name="Min" Type="Real64" Value="-2"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+							<RTPCList>
+								<RTPC Name="" ID="{851EBC12-D890-4804-A3B4-5AAC79CB3B44}" ShortID="87763087">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="EnemyLF0" ID="{44D9ADA4-0D72-4F4C-8577-56DB20A47652}" WorkUnitID="{44E19453-F159-4C43-AFE9-68CCF53C548C}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{BE608E10-66E2-4F41-8E63-875E939F22C1}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>1.052</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0.111</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="LfoPWM" Type="Real64" Value="57.9"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="25"/>
+						<Property Name="LfoWaveform" Type="int32" Value="2"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="Secret Room LFO" ID="{CF756163-AE14-4E7B-B220-9F8A5E4A6FFA}" ShortID="817680383">
+					<PropertyList>
+						<Property Name="LfoAttack" Type="Real64" Value="8.11"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.08">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4CC3A8FA-168E-4DC9-9A80-CF1427FE3B99}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoInitialPhase" Type="Real64" Value="180"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="Ambience LFO" ID="{7C5A23EC-28CF-4FCC-B05E-754691830912}" ShortID="825176881">
+					<PropertyList>
+						<Property Name="LfoAttack" Type="Real64" Value="4.58"/>
+						<Property Name="LfoDepth" Type="Real64" Value="70"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.3">
+							<RTPCList>
+								<RTPC Name="" ID="{359F15A4-E452-453F-9B52-D21A5E69CE35}" ShortID="381342701">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Enemy LFO 2" ID="{585E8AC0-1A07-4E2D-84E9-A1D685FB846A}" WorkUnitID="{44E19453-F159-4C43-AFE9-68CCF53C548C}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{11C76FA1-882F-4DE1-9BDA-F1898674F3F7}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="5"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0.04985</YPos>
+												<Flags>21</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0.18022</YPos>
+												<Flags>53</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="LfoPWM" Type="Real64" Value="29.5"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="56"/>
+						<Property Name="LfoWaveform" Type="int32" Value="2"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="Secret Room LFO 2" ID="{98F649D6-BDAC-4AEE-B58C-75487EB23CA5}" ShortID="821457399">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.03"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="16"/>
+						<Property Name="LfoWaveform" Type="int32" Value="1"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{70688E81-A3B1-4821-B2B0-4637FD2DE8D6}" SchemaVersion="103">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{70688E81-A3B1-4821-B2B0-4637FD2DE8D6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Stamina Test" ID="{73AF9D63-8BC0-4282-8CBB-38C4A5451BA6}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Start_Run" ID="{7A5D9177-CD5C-45C9-8A3C-CF39C974BA91}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Footstep" ID="{6FF9E56B-326E-4027-A182-39BD0D6884EE}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Run_Gentle" ID="{34F59536-F606-4845-9B21-81D659E96B1D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Run_Heavy" ID="{CB9B2B08-644B-41B3-B402-B55D498A8D14}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stamina_Depleted" ID="{9453805A-7BA8-484F-8DD5-EB32530DB029}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>5</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>53</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Chase" ID="{3D8EBFBE-378E-4664-9EA3-7798E4D24468}"/>
+						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="High_Stamina" ID="{EE647FF4-6D0C-4CA4-8CDC-5D22A58471C6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Doors Test" ID="{421C0A32-A025-4D36-8DE9-CD4DE793C69E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Door_Open" ID="{8FD1CDB7-F275-414C-B934-60815F3534FB}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Door_Unlocking" ID="{8E9031D5-A024-42B2-BAE9-F5B446EC82BE}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Door_Unlocking" ID="{EA92AB40-0EC7-4B25-A825-51590478A4A1}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Door_Close" ID="{6F2E9104-6DD7-4F49-B799-28DE0D17E79C}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>20.3661327231121</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>2</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{75AE232A-E7F6-4AA4-8261-D32297582DA3}"/>
+						<CurrentStateRef Name="None" ID="{BE906E17-89CD-4E5D-A351-85664F4CC005}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="High_Stamina" ID="{EE647FF4-6D0C-4CA4-8CDC-5D22A58471C6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Music Test" ID="{293FEB38-B0AE-41AF-A30E-676514046447}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PLAY_MUSIC" ID="{333164A7-A98D-4CFD-A59B-A8295136854E}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="STOP_MUSIC" ID="{979543C3-9324-4922-838A-5A288351DE6C}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambient_Music" ID="{9CEDD96E-EE7D-4B79-A736-0C313D98FCD0}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Chase_Music" ID="{21C4678F-B903-4E21-AA71-ABFD7747725D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Death_Music" ID="{259B1B4B-F0BB-45BB-B559-98FDEFF4A820}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Secret_Room_Music" ID="{F88E7B71-EDB2-4B54-A910-0D10DE78C056}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pause_Menu_On" ID="{1EEA2C35-CF47-4DE4-970D-01F1CA90621D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pause_Menu_Off" ID="{1D2EA4D8-8F95-463F-B34C-942756B6A6F4}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>2</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Chase" ID="{3D8EBFBE-378E-4664-9EA3-7798E4D24468}"/>
+						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="High_Stamina" ID="{EE647FF4-6D0C-4CA4-8CDC-5D22A58471C6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Footsteps Test" ID="{D933E750-7354-4184-900E-E64792CC867B}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Footstep" ID="{6FF9E56B-326E-4027-A182-39BD0D6884EE}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Enemy_Footstep" ID="{5C40B704-1DB9-4271-A8D3-1E712C4A1788}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{75AE232A-E7F6-4AA4-8261-D32297582DA3}"/>
+						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Depleted_Stamina" ID="{B4961FCD-077E-44DF-BF72-394D556844D6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Reverb Test" ID="{F02EE013-711A-49CE-AE37-810AFFBE9237}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Footstep" ID="{6FF9E56B-326E-4027-A182-39BD0D6884EE}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RvbZone_Small_Rooms" ID="{7C5B2AD3-A93B-4254-B0C2-CAEB27679F94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RvbZone_Large_Rooms" ID="{66D54233-4ADA-4023-8E4F-842FC2DD7A7C}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RvbZone_Tiled_Rooms" ID="{D91DE20A-9E4C-4959-B7D7-20CDCE6C1EB8}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RvbZone_Narrow_Rooms" ID="{5D9A6707-4937-4836-AB05-CD776EB1ED8D}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Ambient" ID="{0DD2B4CF-CF59-4829-9306-C3424BE57286}"/>
+						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Depleted_Stamina" ID="{B4961FCD-077E-44DF-BF72-394D556844D6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Enemy Test" ID="{6C1F4BC2-E211-451D-AEB0-FEEB7D4B06C0}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Enemy_Passive_Sounds" ID="{A233F4C0-F19C-44F8-AD7D-8BC82D80639F}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Enemy_Caution_Sounds" ID="{268F20ED-E25D-4343-ABE6-CF10DDD96A42}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Enemy_Chase_Sounds" ID="{4AB66459-D662-4B67-ABED-7CDCB896E04C}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Enemy_Footstep" ID="{5C40B704-1DB9-4271-A8D3-1E712C4A1788}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PLAY_MUSIC" ID="{333164A7-A98D-4CFD-A59B-A8295136854E}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Chase_Music" ID="{21C4678F-B903-4E21-AA71-ABFD7747725D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Death_Music" ID="{259B1B4B-F0BB-45BB-B559-98FDEFF4A820}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Ambient" ID="{0DD2B4CF-CF59-4829-9306-C3424BE57286}"/>
+						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="High_Stamina" ID="{EE647FF4-6D0C-4CA4-8CDC-5D22A58471C6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Player SFX Test" ID="{455BADD4-5B10-4DCE-9C87-E6790EF067AD}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Start_Run" ID="{7A5D9177-CD5C-45C9-8A3C-CF39C974BA91}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stamina_Depleted" ID="{9453805A-7BA8-484F-8DD5-EB32530DB029}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Run_Gentle" ID="{34F59536-F606-4845-9B21-81D659E96B1D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Run_Heavy" ID="{CB9B2B08-644B-41B3-B402-B55D498A8D14}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Footstep" ID="{6FF9E56B-326E-4027-A182-39BD0D6884EE}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Secret_Room" ID="{8BD190FA-603E-4ADF-AA82-7E3181E575C2}"/>
+						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="High_Stamina" ID="{EE647FF4-6D0C-4CA4-8CDC-5D22A58471C6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Notes Test" ID="{0E8E8744-F3FC-4639-AAC5-11638BAD21D4}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Pick_Up_Note" ID="{57F83557-48B9-4636-A647-2BC5946D4DBD}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Put_Down_Note" ID="{2214C4B7-3304-4FD8-8EE5-369114446D53}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PLAY_MUSIC" ID="{333164A7-A98D-4CFD-A59B-A8295136854E}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambient_Music" ID="{9CEDD96E-EE7D-4B79-A736-0C313D98FCD0}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="STOP_MUSIC" ID="{979543C3-9324-4922-838A-5A288351DE6C}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Chase_Music" ID="{21C4678F-B903-4E21-AA71-ABFD7747725D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Ambience" ID="{52F7582A-D585-4BC4-BF58-0C0862805AFC}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Ambience" ID="{0B502352-C59A-403F-8602-F6674BAEAF5B}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>1</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Ambient" ID="{0DD2B4CF-CF59-4829-9306-C3424BE57286}"/>
+						<CurrentStateRef Name="None" ID="{BE906E17-89CD-4E5D-A351-85664F4CC005}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Depleted_Stamina" ID="{B4961FCD-077E-44DF-BF72-394D556844D6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>
