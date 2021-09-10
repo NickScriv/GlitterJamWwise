@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>/Users/willmaskell/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Downloads/Test 2/</ProjectRoot>
-		<SourceFilesRoot>/Users/willmaskell/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Downloads/Test 2/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/willmaskell/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Downloads/Test 2/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>/Users/willmaskell/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GlitterJamWwise/</ProjectRoot>
+		<SourceFilesRoot>/Users/willmaskell/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GlitterJamWwise/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/willmaskell/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GlitterJamWwise/GeneratedSoundBanks/Windows/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/willmaskell/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Downloads/Test 2/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/willmaskell/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/GlitterJamWwise/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1941917414">
+		<SoundBank Id="393239870" Language="SFX" Hash="4145804928">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3402736964" Name="Axe_Swing" ObjectPath="\Events\Default Work Unit\SFX Events\Axe\Axe_Swing"/>
 				<Event Id="3113414775" Name="Death_Enemy_Sounds" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Death_Enemy_Sounds"/>
 				<Event Id="1550503061" Name="Death_Music" ObjectPath="\Events\Default Work Unit\Music Events\Death_Music">
 					<ActionSetState>
@@ -28,12 +29,13 @@
 				<Event Id="3039021168" Name="Drawers_Open" ObjectPath="\Events\Default Work Unit\SFX Events\Drawers\Drawers_Open"/>
 				<Event Id="1126494853" Name="Flashlight_Off" ObjectPath="\Events\Default Work Unit\SFX Events\Flashlight\Flashlight_Off"/>
 				<Event Id="2033671033" Name="Flashlight_On" ObjectPath="\Events\Default Work Unit\SFX Events\Flashlight\Flashlight_On"/>
+				<Event Id="3990381908" Name="Good_Ending_SFX" ObjectPath="\Events\Default Work Unit\SFX Events\Endings\Good_Ending_SFX"/>
 				<Event Id="1675835462" Name="Inject_Cure" ObjectPath="\Events\Default Work Unit\SFX Events\Cure\Inject_Cure"/>
 				<Event Id="757579393" Name="Key_Acquired" ObjectPath="\Events\Default Work Unit\SFX Events\Keys\Key_Acquired"/>
+				<Event Id="371036424" Name="Lock_Pick_Break" ObjectPath="\Events\Default Work Unit\SFX Events\Lock Pick\Lock_Pick_Break"/>
 				<Event Id="1705018554" Name="Locked_Door" ObjectPath="\Events\Default Work Unit\SFX Events\Doors\Locked_Door"/>
 				<Event Id="3358299437" Name="Pick_Up_Note" ObjectPath="\Events\Default Work Unit\SFX Events\Notes\Pick_Up_Note"/>
 				<Event Id="129602330" Name="Pickup_Flashlight" ObjectPath="\Events\Default Work Unit\SFX Events\Flashlight\Pickup_Flashlight"/>
-				<Event Id="278617630" Name="Play_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Play_Ambience"/>
 				<Event Id="1238538214" Name="Play_Ambient_Music" ObjectPath="\Events\Default Work Unit\Music Events\Play_Ambient_Music">
 					<ActionSetState>
 						<ActionSetStateEntry Id="77978275" Name="Ambient" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Ambient"/>
@@ -50,9 +52,12 @@
 				<Event Id="3668695751" Name="Play_Enemy_Footstep" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Play_Enemy_Footstep"/>
 				<Event Id="3793582191" Name="Play_Enemy_Passive_Sounds" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Play_Enemy_Passive_Sounds"/>
 				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\Default Work Unit\SFX Events\Footsteps\Play_Footstep"/>
+				<Event Id="1060106358" Name="Play_Indoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Indoor Ambience\Play_Indoor_Ambience"/>
 				<Event Id="1225062921" Name="Play_Lights_Power_Off" ObjectPath="\Events\Default Work Unit\SFX Events\Lights\Play_Lights_Power_Off"/>
 				<Event Id="523050301" Name="Play_Lights_Power_On" ObjectPath="\Events\Default Work Unit\SFX Events\Lights\Play_Lights_Power_On"/>
 				<Event Id="3124987295" Name="Play_Lock_Picking" ObjectPath="\Events\Default Work Unit\SFX Events\Lock Pick\Play_Lock_Picking"/>
+				<Event Id="3795145933" Name="Play_Outdoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Outdoor Ambience\Play_Outdoor_Ambience"/>
+				<Event Id="219100449" Name="Player_Kills_Enemy" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Player_Kills_Enemy"/>
 				<Event Id="3626210482" Name="Put_Down_Note" ObjectPath="\Events\Default Work Unit\SFX Events\Notes\Put_Down_Note"/>
 				<Event Id="1474002183" Name="Safe_Close" ObjectPath="\Events\Default Work Unit\SFX Events\Safe\Safe_Close"/>
 				<Event Id="189348657" Name="Safe_Open" ObjectPath="\Events\Default Work Unit\SFX Events\Safe\Safe_Open"/>
@@ -60,9 +65,10 @@
 				<Event Id="3982195600" Name="Shotgun_Fire" ObjectPath="\Events\Default Work Unit\SFX Events\Shotgun\Shotgun_Fire"/>
 				<Event Id="3140010222" Name="Stamina_Depleted" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stamina_Depleted"/>
 				<Event Id="1047608429" Name="Start_Run" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Start_Run"/>
-				<Event Id="2477713992" Name="Stop_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Stop_Ambience"/>
 				<Event Id="3638328809" Name="Stop_Door_Unlocking" ObjectPath="\Events\Default Work Unit\SFX Events\Doors\Stop_Door_Unlocking"/>
+				<Event Id="2473162048" Name="Stop_Indoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Indoor Ambience\Stop_Indoor_Ambience"/>
 				<Event Id="21842589" Name="Stop_Lock_Picking" ObjectPath="\Events\Default Work Unit\SFX Events\Lock Pick\Stop_Lock_Picking"/>
+				<Event Id="2431981779" Name="Stop_Outdoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Outdoor Ambience\Stop_Outdoor_Ambience"/>
 				<Event Id="2141040177" Name="Stop_Run_Gentle" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stop_Run_Gentle"/>
 				<Event Id="377921503" Name="Stop_Run_Heavy" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stop_Run_Heavy"/>
 			</IncludedEvents>
@@ -123,7 +129,11 @@
 				</File>
 				<File Id="123948626" Language="SFX">
 					<ShortName>Lock_Picking_Loop.wav</ShortName>
-					<Path>SFX/Lock_Picking_Loop_D79FB2B7.wem</Path>
+					<Path>SFX/Lock_Picking_Loop_4B97722C.wem</Path>
+				</File>
+				<File Id="127374453" Language="SFX">
+					<ShortName>Outside_Ambience.wav</ShortName>
+					<Path>SFX/Outside_Ambience_D79FB2B7.wem</Path>
 				</File>
 				<File Id="127938360" Language="SFX">
 					<ShortName>tile_fs_crouch_3.wav</ShortName>
@@ -209,6 +219,10 @@
 					<ShortName>Shotgun_Empty_1.wav</ShortName>
 					<Path>SFX/Shotgun_Empty_1_10C4C929.wem</Path>
 				</File>
+				<File Id="340838024" Language="SFX">
+					<ShortName>Axe_Swing.wav</ShortName>
+					<Path>SFX/Axe_Swing_10C4C929.wem</Path>
+				</File>
 				<File Id="349922209" Language="SFX">
 					<ShortName>Enemy_fs_wood_3.wav</ShortName>
 					<Path>SFX/Enemy_fs_wood_3_10C4C929.wem</Path>
@@ -256,6 +270,10 @@
 				<File Id="432927829" Language="SFX">
 					<ShortName>Locked_Door_1.wav</ShortName>
 					<Path>SFX/Locked_Door_1_10C4C929.wem</Path>
+				</File>
+				<File Id="443052389" Language="SFX">
+					<ShortName>Lock_Pick_Break.wav</ShortName>
+					<Path>SFX/Lock_Pick_Break_10C4C929.wem</Path>
 				</File>
 				<File Id="446270413" Language="SFX">
 					<ShortName>Caution_var_5.wav</ShortName>
@@ -352,6 +370,10 @@
 				<File Id="637253143" Language="SFX">
 					<ShortName>Cure_Injection.wav</ShortName>
 					<Path>SFX/Cure_Injection_10C4C929.wem</Path>
+				</File>
+				<File Id="648246599" Language="SFX">
+					<ShortName>Good_Ending_SFX.wav</ShortName>
+					<Path>SFX/Good_Ending_SFX_10C4C929.wem</Path>
 				</File>
 				<File Id="648660458" Language="SFX">
 					<ShortName>Low_Stamina_Breathing.wav</ShortName>
@@ -468,6 +490,10 @@
 				<File Id="903285620" Language="SFX">
 					<ShortName>tile_fs_crouch_4.wav</ShortName>
 					<Path>SFX/tile_fs_crouch_4_10C4C929.wem</Path>
+				</File>
+				<File Id="905607898" Language="SFX">
+					<ShortName>Player_Kills_Enemy.wav</ShortName>
+					<Path>SFX/Player_Kills_Enemy_10C4C929.wem</Path>
 				</File>
 				<File Id="915312894" Language="SFX">
 					<ShortName>Caution_var_7.wav</ShortName>
@@ -614,11 +640,12 @@
 				<AuxBus Id="1102545430" Name="RvbZone_Narrow_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Narrow_Rooms"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="285680418">
+		<SoundBank Id="3991942870" Language="SFX" Hash="4053396721">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1828421404" Name="Good_Ending_Music" ObjectPath="\Events\Default Work Unit\Music Events\Good_Ending_Music"/>
 				<Event Id="3358299437" Name="Pick_Up_Note" ObjectPath="\Events\Default Work Unit\SFX Events\Notes\Pick_Up_Note"/>
 				<Event Id="2932040671" Name="PLAY_MUSIC" ObjectPath="\Events\Default Work Unit\Music Events\PLAY_MUSIC">
 					<ActionSetState>
@@ -666,6 +693,10 @@
 				<File Id="127459953" Language="SFX">
 					<ShortName>K1_Chase.wav</ShortName>
 					<Path>SFX/K1_Chase_D79FB2B7.wem</Path>
+				</File>
+				<File Id="144165873" Language="SFX">
+					<ShortName>Good_Ending_Music.wav</ShortName>
+					<Path>SFX/Good_Ending_Music_D79FB2B7.wem</Path>
 				</File>
 				<File Id="160081236" Language="SFX">
 					<ShortName>usK0_Ambient_var2.wav</ShortName>

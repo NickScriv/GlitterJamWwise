@@ -8017,6 +8017,139 @@
 								</MusicPlaylistItem>
 							</Playlist>
 						</MusicPlaylistContainer>
+						<Folder Name="Ending Music" ID="{011CCEBB-4ACF-4E26-A636-2356A1D9FADF}" ShortID="47308326">
+							<ChildrenList>
+								<MusicSegment Name="Good Ending Music" ID="{23CAD9C6-5F37-4DEA-BA6D-B55AF0831017}" ShortID="76407682">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="24656.3265306122"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="65"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise Parametric EQ (Custom)" ID="{BB0DCC2C-B8AF-4C2C-8099-9FBA01C5B057}" ShortID="69048771" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<PropertyList>
+														<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+														<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
+														<Property Name="OnOffBand1" Type="bool" Value="False"/>
+														<Property Name="OnOffBand2" Type="bool" Value="False"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{51EDEBBC-E9CE-4055-A9C7-182D9280173B}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Good_Ending_Music" ID="{B9A7B47A-D7A0-4E33-975F-0B1495ACE407}" ShortID="636899112">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Good_Ending_Music" ID="{9B37D42C-2736-4A98-A5D9-69BB4F911D80}">
+													<Language>SFX</Language>
+													<AudioFile>Good_Ending_Music.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="144165873"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{DF1C1EF1-7ADE-4D74-9703-EE42CB133E25}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{22706011-BEAE-4B23-A543-2E680D6F1374}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Good_Ending_Music" ID="{4F97CCFD-DEF8-46AC-9FB3-D9DC43067470}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="24656.3265306122"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Good_Ending_Music" ID="{9B37D42C-2736-4A98-A5D9-69BB4F911D80}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{B7AFFD8B-621B-474B-8202-2897A9BEC523}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>-7.01023</YPos>
+																										<Flags>5</Flags>
+																										<SegmentShape>Log2</SegmentShape>
+																									</Point>
+																									<Point>
+																										<XPos>9.27597</XPos>
+																										<YPos>-0</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>24.6563265306122</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{B81FB2D7-A597-473B-A14D-1547C73FA1E8}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{77EFC0D0-D3E8-4F66-81CB-DBCC2EA74910}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="14754.0983606557"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 					<StateInfo>
 						<StatePropertyList>
