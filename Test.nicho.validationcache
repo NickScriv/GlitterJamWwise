@@ -1,5 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="103">
+	<ValidationCacheItem File="E:\WwiseGlitter\Virtual Acoustics\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Triggers\Default Work Unit.wwu" DateLow="1624129896" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Test.wproj" DateLow="1629943190" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Switches\Default Work Unit.wwu" DateLow="1624129896" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\States\Default Work Unit.wwu" DateLow="1624129896" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1629943190" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\SoundBanks\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Queries\Factory Queries.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Queries\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Presets\Factory Spatial Audio.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Presets\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Modulators\Default Work Unit.wwu" DateLow="1624132830" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Mixing Sessions\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Metadata\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1624243650" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1625505180" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Game Parameters\Default Work Unit.wwu" DateLow="1624132538" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Events\Default Work Unit.wwu" DateLow="1629943187" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Effects\Factory Effects.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Effects\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Conversion Settings\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Control Surface Sessions\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Audio Devices\Default Work Unit.wwu" DateLow="1623366726" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Attenuations\Default Work Unit.wwu" DateLow="1629943187" DateHigh="0"/>
+	<ValidationCacheItem File="E:\WwiseGlitter\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1629943187" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicho\OneDrive\Documents\WwiseProjects\Test\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1622311398" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicho\OneDrive\Documents\WwiseProjects\Test\Virtual Acoustics\Default Work Unit.wwu" DateLow="1622319581" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\nicho\OneDrive\Documents\WwiseProjects\Test\Triggers\Default Work Unit.wwu" DateLow="1622319581" DateHigh="0"/>
