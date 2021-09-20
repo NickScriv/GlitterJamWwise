@@ -148,7 +148,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	391406086	tile_fs_run_3	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\tile_fs_run_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep Movement Type Switch\Running Footsteps\Tile Run\tile_fs_run_3		262336
 	411798552	Pickup_Note_1	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Pickup_Note_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Notes\Pickup Note\Pickup_Note_1		262288
 	427063800	Locked_Door_2	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Locked_Door_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Doors\Locked Door\Locked_Door_2		205976
-	430611945	Safe_Locked	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Safe_Locked_5E53E833.wem		\Actor-Mixer Hierarchy\Default Work Unit\Safe\Safe_Locked		234356
+	430611945	Safe_Locked	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Safe_Locked_A6BD20A4.wem		\Actor-Mixer Hierarchy\Default Work Unit\Safe\Safe_Locked		234356
 	432927829	Locked_Door_1	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Locked_Door_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Doors\Locked Door\Locked_Door_1		205976
 	443052389	Lock_Pick_Break	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Lock_Pick_Break_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lock Pick\Lock_Pick_Break		264792
 	446270413	Caution_var_5	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Caution_var_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy Sounds\Enemy Caution\Enemy Variations\Enemy Variations (Caution)\Caution_var_5		356516
@@ -162,7 +162,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	527141422	Enemy_fs_wood_5	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Enemy_fs_wood_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy Sounds\Enemy Footstep Switch\Enemy Wood Footsteps\Enemy_fs_wood_5		496340
 	530507452	tile_fs_walk_3	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\tile_fs_walk_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep Movement Type Switch\Walking Footsteps\Tile Walk\tile_fs_walk_3		262336
 	530980148	Lights_Power_On	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Lights_Power_On_Test1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lights\Lights_Power_On		393360
-	531573207	Bad_Ending_SFX	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Bad_Ending_SFX_D89E0E74.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ending SFX\Bad_Ending_SFX		1544480
+	531573207	Bad_Ending_SFX	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Bad_Ending_SFX_88667C2E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ending SFX\Bad_Ending_SFX		1544480
 	532809091	tile_fs_crouch_2	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\tile_fs_crouch_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep Movement Type Switch\Crouching Footsteps\Tile Crouch\tile_fs_crouch_2		262336
 	554635539	Enemy_fs_wood_6	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Enemy_fs_wood_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy Sounds\Enemy Footstep Switch\Enemy Wood Footsteps\Enemy_fs_wood_6		496292
 	571028704	Safe_Close_2	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Safe_Close_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Safe\Safe Close\Safe_Close_2		524512
@@ -227,5 +227,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1046225091	Chase_var_3	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\Chase_var_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy Sounds\Enemy Chase\Enemy Variations\Chase_var_3		898460
 	1049489781	UI_Scroll	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\UI_Scroll_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Scroll		233792
 	1052905808	wood_fs_run_4	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\wood_fs_run_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\Footstep Movement Type Switch\Running Footsteps\Wood Run\wood_fs_run_4		262336
-	1072431155	UI_Select	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\UI_Select_F4435B49.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Select		539772
+	1072431155	UI_Select	Y:\Documents\GitHub\GlitterJamWwise\.cache\Mac\SFX\UI_Select_71D45A73.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Select		539772
 

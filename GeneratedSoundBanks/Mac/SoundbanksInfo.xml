@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1037924187">
+		<SoundBank Id="393239870" Language="SFX" Hash="888224968">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -272,7 +272,7 @@
 				</File>
 				<File Id="430611945" Language="SFX">
 					<ShortName>Safe_Locked.wav</ShortName>
-					<Path>SFX/Safe_Locked_5E53E833.wem</Path>
+					<Path>SFX/Safe_Locked_A6BD20A4.wem</Path>
 				</File>
 				<File Id="432927829" Language="SFX">
 					<ShortName>Locked_Door_1.wav</ShortName>
@@ -328,7 +328,7 @@
 				</File>
 				<File Id="531573207" Language="SFX">
 					<ShortName>Bad_Ending_SFX.wav</ShortName>
-					<Path>SFX/Bad_Ending_SFX_D89E0E74.wem</Path>
+					<Path>SFX/Bad_Ending_SFX_88667C2E.wem</Path>
 				</File>
 				<File Id="532809091" Language="SFX">
 					<ShortName>tile_fs_crouch_2.wav</ShortName>
@@ -588,7 +588,7 @@
 				</File>
 				<File Id="1072431155" Language="SFX">
 					<ShortName>UI_Select.wav</ShortName>
-					<Path>SFX/UI_Select_F4435B49.wem</Path>
+					<Path>SFX/UI_Select_71D45A73.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
