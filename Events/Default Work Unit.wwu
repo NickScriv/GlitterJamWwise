@@ -888,6 +888,32 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Bad_Ending_SFX" ID="{CAE7DD27-BE13-47A4-8634-AAF44D5D73F9}">
+									<ChildrenList>
+										<Action Name="" ID="{9E039938-B4DA-4676-85A2-C0EB42DB02BF}" ShortID="156235660">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Bad_Ending_SFX" ID="{CC5F3A98-0449-4D79-969C-3DD4DE714B95}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{DC04ECC4-19BA-4C50-9383-16D3963C1740}" ShortID="19770925">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="Delay" Type="Real64" Value="1.172"/>
+												<Property Name="FadeInCurve" Type="int16" Value="7"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64" Value="-2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Outdoor Ambience" ID="{2F3A44AE-419D-48AF-A641-B50AF216701F}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -1075,6 +1101,13 @@
 									</PropertyList>
 									<ReferenceList/>
 								</Action>
+								<Action Name="" ID="{1E85E611-45BC-4C4A-9A3A-103C23A4DED5}" ShortID="928612100">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Select" ID="{358AC118-D975-4E71-9E52-F1A83DEFFD74}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Pause_Menu_Off" ID="{1D2EA4D8-8F95-463F-B34C-942756B6A6F4}">
@@ -1087,6 +1120,13 @@
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList/>
+								</Action>
+								<Action Name="" ID="{704E45AD-EC00-41C3-BDA6-9462CDDF1714}" ShortID="458047843">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Scroll" ID="{E7A71A4E-DAB6-42FC-A594-4B540E928FDB}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+										</Reference>
+									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
@@ -1105,9 +1145,107 @@
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{F96F68BB-EB63-418F-B831-662803ADD4CA}" ShortID="41893637">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Good Ending Music" ID="{23CAD9C6-5F37-4DEA-BA6D-B55AF0831017}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+											<ObjectRef Name="Good_Ending" ID="{22469BE9-DC6F-43D4-8602-646234B6948E}" WorkUnitID="{B45B1B1A-95EC-4A4A-8ADA-3070219E32FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6F6FDF11-67AE-40ED-B532-B0DFD4AC2D99}" ShortID="286591100">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music Switch" ID="{8794AC86-4755-4117-BFC2-7AF9107B97E5}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bad_Ending_Music" ID="{73997908-7EFE-4EE0-BFB2-3ABD8D1B6BB7}">
+							<ChildrenList>
+								<Action Name="" ID="{7F528E98-8574-496F-B4CF-89BA8A206CAD}" ShortID="812735173">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="1.172"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bad_Ending" ID="{B771CD2E-02B1-45DA-8CA0-F19926C9F697}" WorkUnitID="{B45B1B1A-95EC-4A4A-8ADA-3070219E32FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Outside_Music_Event" ID="{B22EC091-D54C-4D64-8161-FBD928B47720}">
+							<ChildrenList>
+								<Action Name="" ID="{BABFBAD6-66FA-4597-8A46-F2BC36639874}" ShortID="683969181">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music Switch" ID="{8794AC86-4755-4117-BFC2-7AF9107B97E5}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AF8C4CDA-658E-4B65-B6D9-681247A471D4}" ShortID="1035803772">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Outside" ID="{2F834C8E-8769-412A-AA0B-CAEE59C7307B}" WorkUnitID="{B45B1B1A-95EC-4A4A-8ADA-3070219E32FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5A9AB1A1-F548-41E1-9046-C7E98FDAD0A9}" ShortID="606645503">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music Switch" ID="{8794AC86-4755-4117-BFC2-7AF9107B97E5}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Menu_Music" ID="{10DB1C94-3385-4EF7-9F79-6DC3B6E62093}">
+							<ChildrenList>
+								<Action Name="" ID="{96A51B89-2CF5-4F32-92C9-AAF71DCD0ABE}" ShortID="630689627">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Menu" ID="{2194FC87-C620-4604-9628-0FD0395046D1}" WorkUnitID="{B45B1B1A-95EC-4A4A-8ADA-3070219E32FE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UI Events" ID="{7FB970AB-AD30-4345-9853-99FA30133A1F}" ShortID="750841144">
+					<ChildrenList>
+						<Event Name="UI_Scroll" ID="{3C7F6B83-8570-4BAC-93C9-0ED947B2A49F}">
+							<ChildrenList>
+								<Action Name="" ID="{D6F913D5-1E50-42D2-B0B1-5352F935F985}" ShortID="464054837">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Scroll" ID="{E7A71A4E-DAB6-42FC-A594-4B540E928FDB}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Select" ID="{0222BB28-D3B4-4282-9F84-E0C401362141}">
+							<ChildrenList>
+								<Action Name="" ID="{8CEDE6C4-137F-4D7F-89F8-F9619046D8D4}" ShortID="119086294">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Select" ID="{358AC118-D975-4E71-9E52-F1A83DEFFD74}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

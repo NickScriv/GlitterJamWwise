@@ -11,12 +11,13 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="4145804928">
+		<SoundBank Id="393239870" Language="SFX" Hash="1037924187">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3402736964" Name="Axe_Swing" ObjectPath="\Events\Default Work Unit\SFX Events\Axe\Axe_Swing"/>
+				<Event Id="3747135464" Name="Bad_Ending_SFX" ObjectPath="\Events\Default Work Unit\SFX Events\Endings\Bad_Ending_SFX"/>
 				<Event Id="3113414775" Name="Death_Enemy_Sounds" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Death_Enemy_Sounds"/>
 				<Event Id="1550503061" Name="Death_Music" ObjectPath="\Events\Default Work Unit\Music Events\Death_Music">
 					<ActionSetState>
@@ -34,6 +35,8 @@
 				<Event Id="757579393" Name="Key_Acquired" ObjectPath="\Events\Default Work Unit\SFX Events\Keys\Key_Acquired"/>
 				<Event Id="371036424" Name="Lock_Pick_Break" ObjectPath="\Events\Default Work Unit\SFX Events\Lock Pick\Lock_Pick_Break"/>
 				<Event Id="1705018554" Name="Locked_Door" ObjectPath="\Events\Default Work Unit\SFX Events\Doors\Locked_Door"/>
+				<Event Id="2179654399" Name="Pause_Menu_Off" ObjectPath="\Events\Default Work Unit\Music Events\Pause_Menu_Off"/>
+				<Event Id="3483621035" Name="Pause_Menu_On" ObjectPath="\Events\Default Work Unit\Music Events\Pause_Menu_On"/>
 				<Event Id="3358299437" Name="Pick_Up_Note" ObjectPath="\Events\Default Work Unit\SFX Events\Notes\Pick_Up_Note"/>
 				<Event Id="129602330" Name="Pickup_Flashlight" ObjectPath="\Events\Default Work Unit\SFX Events\Flashlight\Pickup_Flashlight"/>
 				<Event Id="1238538214" Name="Play_Ambient_Music" ObjectPath="\Events\Default Work Unit\Music Events\Play_Ambient_Music">
@@ -60,6 +63,7 @@
 				<Event Id="219100449" Name="Player_Kills_Enemy" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Player_Kills_Enemy"/>
 				<Event Id="3626210482" Name="Put_Down_Note" ObjectPath="\Events\Default Work Unit\SFX Events\Notes\Put_Down_Note"/>
 				<Event Id="1474002183" Name="Safe_Close" ObjectPath="\Events\Default Work Unit\SFX Events\Safe\Safe_Close"/>
+				<Event Id="2854523811" Name="Safe_Locked" ObjectPath="\Events\Default Work Unit\SFX Events\Safe\Safe_Locked"/>
 				<Event Id="189348657" Name="Safe_Open" ObjectPath="\Events\Default Work Unit\SFX Events\Safe\Safe_Open"/>
 				<Event Id="2627359935" Name="Shotgun_Empty" ObjectPath="\Events\Default Work Unit\SFX Events\Shotgun\Shotgun_Empty"/>
 				<Event Id="3982195600" Name="Shotgun_Fire" ObjectPath="\Events\Default Work Unit\SFX Events\Shotgun\Shotgun_Fire"/>
@@ -71,12 +75,15 @@
 				<Event Id="2431981779" Name="Stop_Outdoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Outdoor Ambience\Stop_Outdoor_Ambience"/>
 				<Event Id="2141040177" Name="Stop_Run_Gentle" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stop_Run_Gentle"/>
 				<Event Id="377921503" Name="Stop_Run_Heavy" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stop_Run_Heavy"/>
+				<Event Id="1208240901" Name="UI_Scroll" ObjectPath="\Events\Default Work Unit\UI Events\UI_Scroll"/>
+				<Event Id="2774129122" Name="UI_Select" ObjectPath="\Events\Default Work Unit\UI Events\UI_Select"/>
 			</IncludedEvents>
 			<IncludedAuxBusses>
 				<AuxBus Id="718557711" Name="RvbZone_Tiled_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Tiled_Rooms"/>
 				<AuxBus Id="741810926" Name="RvbZone_Large_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Large_Rooms"/>
 				<AuxBus Id="1037034650" Name="RvbZone_Small_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Small_Rooms"/>
 				<AuxBus Id="1102545430" Name="RvbZone_Narrow_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Narrow_Rooms"/>
+				<AuxBus Id="2375102103" Name="RvbZone_Outside" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Outside"/>
 			</IncludedAuxBusses>
 			<IncludedMemoryFiles>
 				<File Id="2812397" Language="SFX">
@@ -207,10 +214,6 @@
 					<ShortName>Caution_var_6.wav</ShortName>
 					<Path>SFX/Caution_var_6_10C4C929.wem</Path>
 				</File>
-				<File Id="295821180" Language="SFX">
-					<ShortName>Enemy_fs_wood_2.wav</ShortName>
-					<Path>SFX/Enemy_fs_wood_2_10C4C929.wem</Path>
-				</File>
 				<File Id="301772476" Language="SFX">
 					<ShortName>Key_Acquired_1.wav</ShortName>
 					<Path>SFX/Key_Acquired_1_10C4C929.wem</Path>
@@ -267,6 +270,10 @@
 					<ShortName>Locked_Door_2.wav</ShortName>
 					<Path>SFX/Locked_Door_2_10C4C929.wem</Path>
 				</File>
+				<File Id="430611945" Language="SFX">
+					<ShortName>Safe_Locked.wav</ShortName>
+					<Path>SFX/Safe_Locked_5E53E833.wem</Path>
+				</File>
 				<File Id="432927829" Language="SFX">
 					<ShortName>Locked_Door_1.wav</ShortName>
 					<Path>SFX/Locked_Door_1_10C4C929.wem</Path>
@@ -319,6 +326,10 @@
 					<ShortName>Lights_Power_On_Test1.wav</ShortName>
 					<Path>SFX/Lights_Power_On_Test1_10C4C929.wem</Path>
 				</File>
+				<File Id="531573207" Language="SFX">
+					<ShortName>Bad_Ending_SFX.wav</ShortName>
+					<Path>SFX/Bad_Ending_SFX_D89E0E74.wem</Path>
+				</File>
 				<File Id="532809091" Language="SFX">
 					<ShortName>tile_fs_crouch_2.wav</ShortName>
 					<Path>SFX/tile_fs_crouch_2_10C4C929.wem</Path>
@@ -351,10 +362,6 @@
 					<ShortName>tile_fs_run_5.wav</ShortName>
 					<Path>SFX/tile_fs_run_5_10C4C929.wem</Path>
 				</File>
-				<File Id="611208096" Language="SFX">
-					<ShortName>Enemy_fs_tile_3.wav</ShortName>
-					<Path>SFX/Enemy_fs_tile_3_10C4C929.wem</Path>
-				</File>
 				<File Id="614518866" Language="SFX">
 					<ShortName>Passive_var_2.wav</ShortName>
 					<Path>SFX/Passive_var_2_10C4C929.wem</Path>
@@ -386,10 +393,6 @@
 				<File Id="662933913" Language="SFX">
 					<ShortName>Caution_var_9.wav</ShortName>
 					<Path>SFX/Caution_var_9_10C4C929.wem</Path>
-				</File>
-				<File Id="666960095" Language="SFX">
-					<ShortName>Enemy_fs_tile_6.wav</ShortName>
-					<Path>SFX/Enemy_fs_tile_6_10C4C929.wem</Path>
 				</File>
 				<File Id="682434907" Language="SFX">
 					<ShortName>wood_fs_crouch_1.wav</ShortName>
@@ -575,9 +578,17 @@
 					<ShortName>Chase_var_3.wav</ShortName>
 					<Path>SFX/Chase_var_3_10C4C929.wem</Path>
 				</File>
+				<File Id="1049489781" Language="SFX">
+					<ShortName>UI_Scroll.wav</ShortName>
+					<Path>SFX/UI_Scroll_10C4C929.wem</Path>
+				</File>
 				<File Id="1052905808" Language="SFX">
 					<ShortName>wood_fs_run_4.wav</ShortName>
 					<Path>SFX/wood_fs_run_4_10C4C929.wem</Path>
+				</File>
+				<File Id="1072431155" Language="SFX">
+					<ShortName>UI_Select.wav</ShortName>
+					<Path>SFX/UI_Select_F4435B49.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
@@ -625,11 +636,12 @@
 					<Switches>
 						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\SFX\Footsteps\Footsteps_Surface_Type\Wood"/>
 						<Switch Id="2637588553" Name="Tile" ObjectPath="\Switches\Default Work Unit\SFX\Footsteps\Footsteps_Surface_Type\Tile"/>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\Default Work Unit\SFX\Footsteps\Footsteps_Surface_Type\Grass"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2117580418">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1253586523">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -638,14 +650,24 @@
 				<AuxBus Id="741810926" Name="RvbZone_Large_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Large_Rooms"/>
 				<AuxBus Id="1037034650" Name="RvbZone_Small_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Small_Rooms"/>
 				<AuxBus Id="1102545430" Name="RvbZone_Narrow_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Narrow_Rooms"/>
+				<AuxBus Id="2375102103" Name="RvbZone_Outside" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Outside"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="4053396721">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2280491594">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1828421404" Name="Good_Ending_Music" ObjectPath="\Events\Default Work Unit\Music Events\Good_Ending_Music"/>
+				<Event Id="1828421404" Name="Good_Ending_Music" ObjectPath="\Events\Default Work Unit\Music Events\Good_Ending_Music">
+					<ActionSetState>
+						<ActionSetStateEntry Id="589883976" Name="Good_Ending" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Good_Ending"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1415247271" Name="Outside_Music_Event" ObjectPath="\Events\Default Work Unit\Music Events\Outside_Music_Event">
+					<ActionSetState>
+						<ActionSetStateEntry Id="438105790" Name="Outside" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Outside"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="3358299437" Name="Pick_Up_Note" ObjectPath="\Events\Default Work Unit\SFX Events\Notes\Pick_Up_Note"/>
 				<Event Id="2932040671" Name="PLAY_MUSIC" ObjectPath="\Events\Default Work Unit\Music Events\PLAY_MUSIC">
 					<ActionSetState>
@@ -660,6 +682,7 @@
 				<AuxBus Id="741810926" Name="RvbZone_Large_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Large_Rooms"/>
 				<AuxBus Id="1037034650" Name="RvbZone_Small_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Small_Rooms"/>
 				<AuxBus Id="1102545430" Name="RvbZone_Narrow_Rooms" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Narrow_Rooms"/>
+				<AuxBus Id="2375102103" Name="RvbZone_Outside" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\RvbZone_Outside"/>
 			</IncludedAuxBusses>
 			<IncludedMemoryFiles>
 				<File Id="52307656" Language="SFX">
@@ -705,6 +728,10 @@
 				<File Id="185291948" Language="SFX">
 					<ShortName>us_Ambient_Variation.wav</ShortName>
 					<Path>SFX/us_Ambient_Variation_D79FB2B7.wem</Path>
+				</File>
+				<File Id="185633474" Language="SFX">
+					<ShortName>Menu_Music.wav</ShortName>
+					<Path>SFX/Menu_Music_D79FB2B7.wem</Path>
 				</File>
 				<File Id="190703147" Language="SFX">
 					<ShortName>Hit_1.wav</ShortName>
@@ -761,6 +788,10 @@
 				<File Id="472131563" Language="SFX">
 					<ShortName>Secret_Room_Loop.wav</ShortName>
 					<Path>SFX/Secret_Room_Loop_D79FB2B7.wem</Path>
+				</File>
+				<File Id="509923575" Language="SFX">
+					<ShortName>test menu music.wav</ShortName>
+					<Path>SFX/test menu music_D79FB2B7.wem</Path>
 				</File>
 				<File Id="511732289" Language="SFX">
 					<ShortName>dsK3_Ambient_var2.wav</ShortName>
@@ -881,6 +912,12 @@
 				<GameParameter Id="3056858324" Name="Num_of_Keys" ObjectPath="\Game Parameters\Default Work Unit\Gameplay Parameters\Num_of_Keys"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="438105790" Name="Outside" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Outside">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="589883976" Name="Good_Ending" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Good_Ending">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\None">
 					<States/>
 				</StateGroup>
@@ -891,6 +928,10 @@
 						<State Id="779278001" Name="Death" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Death"/>
 						<State Id="77978275" Name="Ambient" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Ambient"/>
 						<State Id="2973900265" Name="Secret_Room" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Secret_Room"/>
+						<State Id="438105790" Name="Outside" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Outside"/>
+						<State Id="2607556080" Name="Menu" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Menu"/>
+						<State Id="589883976" Name="Good_Ending" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Good_Ending"/>
+						<State Id="2222736396" Name="Bad_Ending" ObjectPath="\States\Default Work Unit\Music States\Music_Sections\Bad_Ending"/>
 					</States>
 				</StateGroup>
 			</StateGroups>

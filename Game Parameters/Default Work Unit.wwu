@@ -45,7 +45,7 @@
 								<GameParameter Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}">
 									<PropertyList>
 										<Property Name="InitialValue" Type="Real64" Value="1"/>
-										<Property Name="Max" Type="Real64" Value="2"/>
+										<Property Name="Max" Type="Real64" Value="3"/>
 										<Property Name="Min" Type="Real64" Value="1"/>
 									</PropertyList>
 								</GameParameter>
