@@ -353,6 +353,10 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Player_Kills_Enemy" ID="{F740DBBD-3CF1-4588-87B5-3548BD71C4CD}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="PLAY_MUSIC" ID="{333164A7-A98D-4CFD-A59B-A8295136854E}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="2" Y="0"/>
 						</Module>
@@ -503,11 +507,11 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Ambience" ID="{52F7582A-D585-4BC4-BF58-0C0862805AFC}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<ObjectRef Name="Play_Indoor_Ambience" ID="{52F7582A-D585-4BC4-BF58-0C0862805AFC}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Ambience" ID="{0B502352-C59A-403F-8602-F6674BAEAF5B}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<ObjectRef Name="Stop_Indoor_Ambience" ID="{0B502352-C59A-403F-8602-F6674BAEAF5B}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>

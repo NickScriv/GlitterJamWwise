@@ -27,7 +27,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-11</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{154F89D2-66D6-4CA4-B6DA-30663C81F1AD}" ShortID="725491300">
@@ -290,7 +290,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -336,7 +336,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-11</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{410E729A-E2B5-48AD-A741-4A5AF9E3E341}" ShortID="544650981">
@@ -1596,7 +1596,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>7</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -1980,7 +1980,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-3</Value>
+										<Value>2</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -2523,7 +2523,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-8</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -2626,6 +2626,9 @@
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{8A603EE0-2149-41B4-BC11-1DA9CB8F47F9}">
@@ -5525,11 +5528,42 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
+						<Sound Name="Player_Kills_Enemy" ID="{8D4FDC50-1F33-4FBB-AE23-13FBD67D9F7D}" ShortID="241479141">
+							<PropertyList>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Player_Kills_Enemy" ID="{45751CE6-0573-429E-B40B-64711FDD47C8}">
+									<Language>SFX</Language>
+									<AudioFile>Player_Kills_Enemy.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="905607898"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Player_Kills_Enemy" ID="{45751CE6-0573-429E-B40B-64711FDD47C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Ambience" ID="{8FFE4FAC-7BB8-4042-A0FD-E02390F460C2}" ShortID="322259252">
+				<Folder Name="Ambiences" ID="{8FFE4FAC-7BB8-4042-A0FD-E02390F460C2}" ShortID="322259252">
 					<ChildrenList>
-						<Sound Name="Wind_Ambience" ID="{8955BBE4-4FCD-4677-9BF4-3FD1F4D06754}" ShortID="419802688">
+						<Sound Name="Indoor_Ambience" ID="{8955BBE4-4FCD-4677-9BF4-3FD1F4D06754}" ShortID="419802688">
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
@@ -5639,11 +5673,125 @@
 								<ActiveSource Name="Wind_Ambience" ID="{06E91CFB-C15C-4B11-94AE-403C4FBC5871}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Outdoor Ambience" ID="{2F3A44AE-419D-48AF-A641-B50AF216701F}" ShortID="1031676219">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{13773D62-3795-4B1B-948A-27CD7A9D2E99}" ShortID="215558507">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Ambience LFO" ID="{7C5A23EC-28CF-4FCC-B05E-754691830912}" WorkUnitID="{44E19453-F159-4C43-AFE9-68CCF53C548C}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{AE49A39E-87A7-48E3-89A5-96AE699AEAEF}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>14</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{9315B662-F32E-47C1-A88D-FE56D7A91384}" ShortID="447631989">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Ambience LFO" ID="{7C5A23EC-28CF-4FCC-B05E-754691830912}" WorkUnitID="{44E19453-F159-4C43-AFE9-68CCF53C548C}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{38E995E9-A73C-4509-B38E-06E32ADC5D1A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-40</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>40</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{A81C8539-BDD1-4E1A-983F-A6EA3D06005E}" ShortID="497599878">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Ambience LFO" ID="{7C5A23EC-28CF-4FCC-B05E-754691830912}" WorkUnitID="{44E19453-F159-4C43-AFE9-68CCF53C548C}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{1E3E3494-C35C-4F8F-8B46-51C2A1B4EE4B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-4.90835</YPos>
+														<Flags>21</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>53</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Outside_Ambience" ID="{4D334304-385C-40EE-A403-683EAAE888F1}">
+									<Language>SFX</Language>
+									<AudioFile>Outside_Ambience.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="127374453"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Outside_Ambience" ID="{4D334304-385C-40EE-A403-683EAAE888F1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Lights" ID="{C5C65EA3-2D49-4DF0-AE65-43003118846F}" ShortID="528661244">
 					<ChildrenList>
-						<Sound Name="Lights_Power_Off_Test1" ID="{6F4E1931-E78F-4154-96A8-31FD045E2DBB}" ShortID="34552214">
+						<Sound Name="Lights_Power_Off" ID="{6F4E1931-E78F-4154-96A8-31FD045E2DBB}" ShortID="34552214">
 							<PropertyList>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
@@ -5687,7 +5835,7 @@
 								<ActiveSource Name="Lights_Power_Off_Test1" ID="{05197DCB-731D-410F-A9E3-7869E2CD350F}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Lights_Power_On_Test1" ID="{4571FF23-6F9F-436F-933F-E917E68EEEFE}" ShortID="940754276">
+						<Sound Name="Lights_Power_On" ID="{4571FF23-6F9F-436F-933F-E917E68EEEFE}" ShortID="940754276">
 							<PropertyList>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
@@ -5704,7 +5852,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+									<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -6656,7 +6804,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-22</Value>
+										<Value>-16</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -7189,7 +7337,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>8</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -7313,7 +7461,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>7</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -7442,7 +7590,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-6</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -7466,6 +7614,10 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Lock_Picking_Loop" ID="{CA0FFC37-0E1D-4AD8-9598-6AF3961C6DED}">
+									<PropertyList>
+										<Property Name="LoopEnd" Type="Real64" Value="7.744"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Lock_Picking_Loop.wav</AudioFile>
 									<MediaIDList>
@@ -7476,6 +7628,74 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Lock_Picking_Loop" ID="{CA0FFC37-0E1D-4AD8-9598-6AF3961C6DED}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Lock_Pick_Break" ID="{00DB1FB3-1340-4AD7-B621-24D0B1F91588}" ShortID="631125973">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4C242732-BC31-4856-86E7-4AECABDCD800}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="15"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3733D7B5-5343-48B4-87D6-3ABFED71E751}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="15"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{ABA0B69A-08BD-4EF5-86B8-1878E1DE3A42}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Lock_Pick_Break" ID="{E57C87CD-A8B4-4C5B-A486-F7021CD23852}">
+									<Language>SFX</Language>
+									<AudioFile>Lock_Pick_Break.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="443052389"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Lock_Pick_Break" ID="{E57C87CD-A8B4-4C5B-A486-F7021CD23852}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -7528,7 +7748,7 @@
 				</Folder>
 				<Folder Name="Axe" ID="{C0F42E3D-4E65-484A-95EA-033D88DC5121}" ShortID="437338834">
 					<ChildrenList>
-						<SwitchContainer Name="Axe Swing" ID="{7A04A2C7-016C-4E89-A699-0736F78A93C5}" ShortID="554113824">
+						<SwitchContainer Name="Axe Impact Surfaces" ID="{7A04A2C7-016C-4E89-A699-0736F78A93C5}" ShortID="554113824">
 							<PropertyList>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
@@ -7566,7 +7786,7 @@
 													<Modifier Name="" ID="{D007BB42-0DF7-4336-BDE4-E0C7A5B9E119}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="15"/>
+															<Property Name="Max" Type="Real64" Value="25"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -7596,9 +7816,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{C2DCB8F8-FF65-45BF-985A-445C5322EF94}">
@@ -7692,15 +7909,15 @@
 									</ChildrenList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Axe Swing" ID="{A0532F0C-8B02-4211-8AD7-139FA54C8612}" ShortID="868860221">
+								<RandomSequenceContainer Name="Axe Hit Enemy" ID="{3DD473A8-81ED-48C7-AEFF-AAB884796690}" ShortID="459790830">
 									<PropertyList>
 										<Property Name="Highpass" Type="int16">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{2B01D8F0-1AD6-418E-8ACE-5E4FBA6712E8}">
+													<Modifier Name="" ID="{9447C37E-3540-4DDD-A63B-F7434D14F782}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="15"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -7709,7 +7926,7 @@
 										<Property Name="Lowpass" Type="int16">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{8FADE5B8-1ED6-4032-9788-79698AEDE69B}">
+													<Modifier Name="" ID="{7FAAC0BD-EFBC-45E8-BF60-D75F703CC4E8}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="15"/>
@@ -7718,15 +7935,10 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>2</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{97F5084E-C9EC-4962-9058-2AFC969967A5}">
+													<Modifier Name="" ID="{B51BB5EC-D663-4589-AAE8-F0D0B206ACE0}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Max" Type="Real64" Value="100"/>
@@ -7736,19 +7948,13 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>10</Value>
+												<Value>5</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{DD98ACF3-269D-4DDE-B99F-65173C51D1E3}">
+													<Modifier Name="" ID="{2FE179D0-9FA8-4EA8-8E2D-C3134BFAA5D9}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
 															<Property Name="Min" Type="Real64" Value="-2"/>
@@ -7767,7 +7973,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Axe_Swing" ID="{0746C8A2-5280-4061-BE5C-8A462182C796}" ShortID="777707508">
+										<Sound Name="Axe_Hit_Enemy_1" ID="{02F8BF6A-4F10-4C87-85DE-27ADED4C2A73}" ShortID="248437244">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
@@ -7777,38 +7983,50 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Axe_Swing" ID="{28B10B1D-706F-4E52-8AE8-8F91BFEB37DF}">
+												<AudioFileSource Name="Axe_Hit_Enemy_1" ID="{D0284952-7F17-44C8-AABC-5E92D5E989AB}">
 													<Language>SFX</Language>
-													<AudioFile>Axe_Swing.wav</AudioFile>
+													<AudioFile>Axe_Hit_Enemy_1.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="340838024"/>
+														<MediaID ID="300665773"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ObjectLists/>
 											<ActiveSourceList>
-												<ActiveSource Name="Axe_Swing" ID="{28B10B1D-706F-4E52-8AE8-8F91BFEB37DF}" Platform="Linked"/>
+												<ActiveSource Name="Axe_Hit_Enemy_1" ID="{D0284952-7F17-44C8-AABC-5E92D5E989AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Axe_Hit_Enemy_2" ID="{00D20431-8FCB-4FE9-9E76-D00B69D09114}" ShortID="288324615">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Axe_Hit_Enemy_2" ID="{7B329F3B-AECD-4670-9242-5AC9AED5969E}">
+													<Language>SFX</Language>
+													<AudioFile>Axe_Hit_Enemy_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="902517300"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="Axe_Hit_Enemy_2" ID="{7B329F3B-AECD-4670-9242-5AC9AED5969E}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-									<ObjectLists/>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Axe Hit Enemy" ID="{3DD473A8-81ED-48C7-AEFF-AAB884796690}" ShortID="459790830">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-										</Reference>
-									</ReferenceList>
 									<ObjectLists/>
 								</RandomSequenceContainer>
 								<BlendContainer Name="Axe Hit Wood" ID="{E9769E89-64DD-480B-843B-163C5213BF3C}" ShortID="4819768">
 									<PropertyList>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>4</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
@@ -8173,47 +8391,15 @@
 											</ChildrenList>
 											<ObjectLists/>
 										</RandomSequenceContainer>
-									</ChildrenList>
-									<ObjectLists/>
-								</BlendContainer>
-								<BlendContainer Name="Axe Wood Break" ID="{6BD248A7-A675-46C9-947C-ABDA66A4B528}" ShortID="575328156">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Wood Chunks" ID="{FA37339B-11CA-4CA6-BB07-FB9B8A1C6851}" ShortID="658975421">
+										<RandomSequenceContainer Name="Wood Falling" ID="{4DB9E011-F1F3-4532-8153-485459C8BBFB}" ShortID="831845324">
 											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{2DDAB7A2-80E4-4A45-AABD-7109038B0F6B}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="15"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ModifierList>
 														<ModifierInfo>
-															<Modifier Name="" ID="{F591C432-4B87-4F6C-8459-7D654C989EC3}">
+															<Modifier Name="" ID="{A6F5D8B1-987A-4140-9BB5-A2A70B1E1AAC}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="15"/>
+																	<Property Name="Max" Type="Real64" Value="20"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -8222,7 +8408,7 @@
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
-															<Modifier Name="" ID="{772B3192-B8A9-4D52-AF97-F031B9245D18}">
+															<Modifier Name="" ID="{4F346175-49AE-46B2-B935-26ACE89DE610}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
 																	<Property Name="Max" Type="Real64" Value="100"/>
@@ -8233,338 +8419,16 @@
 													</ModifierList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
-															<Modifier Name="" ID="{21C4084C-BC99-4BF6-AC76-C00DA9D4113A}">
+															<Modifier Name="" ID="{3CE1D205-B1D6-4E88-AAC2-732084DE655A}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Min" Type="Real64" Value="-3"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Wood_Chunks_1" ID="{DAF2D6EB-7C6D-4B94-AC2B-8D46497D4AB4}" ShortID="214765131">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wood_Chunks_1" ID="{52EF3805-7BEF-45B3-B00A-D9225DC93E90}">
-															<Language>SFX</Language>
-															<AudioFile>Wood_Chunks_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="468295359"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Wood_Chunks_1" ID="{52EF3805-7BEF-45B3-B00A-D9225DC93E90}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Wood_Chunks_2" ID="{A56E4F99-4234-45A8-AE9B-5EA5A72CB705}" ShortID="510265326">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wood_Chunks_2" ID="{4D25DBF8-2717-45F1-A1EB-0A03E8322CE4}">
-															<Language>SFX</Language>
-															<AudioFile>Wood_Chunks_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="175253081"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Wood_Chunks_2" ID="{4D25DBF8-2717-45F1-A1EB-0A03E8322CE4}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Wood_Chunks_3" ID="{01CCF6CC-FFF6-48E2-B9C0-1ED0E2E06DD5}" ShortID="477643395">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wood_Chunks_3" ID="{8D6AA186-C7EB-43B1-8959-319E0E95DF87}">
-															<Language>SFX</Language>
-															<AudioFile>Wood_Chunks_3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="902705961"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Wood_Chunks_3" ID="{8D6AA186-C7EB-43B1-8959-319E0E95DF87}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Silence 1" ID="{A6FEDE63-AD70-4B8A-8BE2-5470C54E993C}" ShortID="997900914">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-96</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wood_Chunks_1" ID="{DF0F3A78-3609-4D70-A416-1D9DA2E127AB}">
-															<Language>SFX</Language>
-															<AudioFile>Wood_Chunks_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="468295359"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Wood_Chunks_1" ID="{DF0F3A78-3609-4D70-A416-1D9DA2E127AB}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Silence 2" ID="{387DC01D-A640-4179-822E-85EF27110082}" ShortID="986374118">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64">
-															<ValueList>
-																<Value>-96</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wood_Chunks_1" ID="{09057F28-5CA0-4F97-984E-4CD4F5A973C9}">
-															<Language>SFX</Language>
-															<AudioFile>Wood_Chunks_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="468295359"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Wood_Chunks_1" ID="{09057F28-5CA0-4F97-984E-4CD4F5A973C9}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Axe Hit Wood" ID="{A6A52977-D47F-4855-B6B4-6F2F99D45479}" ShortID="505087702">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{B55FFEBC-92AF-4BF2-BB25-45E0348C1E0F}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="15"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Lowpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{C446365E-A2B2-43E7-8EED-87EF909F134E}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="15"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{31212570-D392-47A5-BB31-C2B5053BB4D6}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="100"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{A96C7266-EACF-462B-AE24-7A08D4650ECE}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Axe_Hit_Wood_1" ID="{65CB6AEF-2F3B-4498-8468-5E4474AD0735}" ShortID="922600571">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Axe_Hit_Wood_1" ID="{A9C1B68A-7C06-404F-AF59-21ED28C8306D}">
-															<Language>SFX</Language>
-															<AudioFile>Axe_Hit_Wood_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="105415055"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Axe_Hit_Wood_1" ID="{A9C1B68A-7C06-404F-AF59-21ED28C8306D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Axe_Hit_Wood_2" ID="{D649824C-4CD6-415C-9FA0-A3B520625585}" ShortID="177514850">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Axe_Hit_Wood_2" ID="{4F359A28-BF3F-4F48-A1E5-8CE491BB5AC9}">
-															<Language>SFX</Language>
-															<AudioFile>Axe_Hit_Wood_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="48423694"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Axe_Hit_Wood_2" ID="{4F359A28-BF3F-4F48-A1E5-8CE491BB5AC9}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Axe_Hit_Wood_3" ID="{41A0DBE0-9602-48D0-A959-50FE86BC5744}" ShortID="462542966">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Axe_Hit_Wood_3" ID="{38C23A2A-91FF-4C29-8ADA-1BCA10822199}">
-															<Language>SFX</Language>
-															<AudioFile>Axe_Hit_Wood_3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="430473415"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ObjectLists/>
-													<ActiveSourceList>
-														<ActiveSource Name="Axe_Hit_Wood_3" ID="{38C23A2A-91FF-4C29-8ADA-1BCA10822199}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-											<ObjectLists/>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Wood Break" ID="{B4C7B4E5-E3A8-4702-98AF-6B961EB6F39A}" ShortID="96314802">
-											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{1DA8A297-8233-416C-A392-7E24E1792564}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="15"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Lowpass" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{C3B3D333-E717-4C43-9026-1EFC517DC9B9}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="15"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{7688EDD4-5864-4340-9E89-B56D66043B14}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="100"/>
-																	<Property Name="Min" Type="Real64" Value="-100"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{C38337B2-0B39-4003-9F3E-5FED8D4950A4}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -8580,7 +8444,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Wood_Breaking_1" ID="{1A707501-6BB9-4CF7-BA8A-7B1ACFA866BD}" ShortID="185049736">
+												<Sound Name="Wood_Falling_1" ID="{F47BD922-BD42-4CFD-974A-AB19A386A20D}" ShortID="528925928">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
@@ -8590,20 +8454,20 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Breaking_1" ID="{40A8FB3F-18C0-44D1-8187-0F35FB3686EF}">
+														<AudioFileSource Name="Wood_Falling_1" ID="{553F1581-51AA-42E7-96F5-BCB2040375A6}">
 															<Language>SFX</Language>
-															<AudioFile>Wood_Breaking_1.wav</AudioFile>
+															<AudioFile>Wood_Falling_1.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="475736143"/>
+																<MediaID ID="461182363"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Breaking_1" ID="{40A8FB3F-18C0-44D1-8187-0F35FB3686EF}" Platform="Linked"/>
+														<ActiveSource Name="Wood_Falling_1" ID="{553F1581-51AA-42E7-96F5-BCB2040375A6}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wood_Breaking_2" ID="{77FE26C3-D178-4A9B-BE71-F40FAFA85AB7}" ShortID="246059747">
+												<Sound Name="Wood_Falling_2" ID="{C62CC653-6F65-410A-954A-8822BC7DCF05}" ShortID="162961274">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
@@ -8613,17 +8477,79 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wood_Breaking_2" ID="{52CCAC22-03C3-4A67-9330-950AC8397D73}">
+														<AudioFileSource Name="Wood_Falling_2" ID="{9C1C064C-9851-4BC8-8CAC-6D0DA791B890}">
 															<Language>SFX</Language>
-															<AudioFile>Wood_Breaking_2.wav</AudioFile>
+															<AudioFile>Wood_Falling_2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="30425846"/>
+																<MediaID ID="802572544"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ObjectLists/>
 													<ActiveSourceList>
-														<ActiveSource Name="Wood_Breaking_2" ID="{52CCAC22-03C3-4A67-9330-950AC8397D73}" Platform="Linked"/>
+														<ActiveSource Name="Wood_Falling_2" ID="{9C1C064C-9851-4BC8-8CAC-6D0DA791B890}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence 1" ID="{4AB6D81C-7C11-4651-9D74-E5DF1C8E2366}" ShortID="784018383">
+													<PropertyList>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-96</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Chunks_1" ID="{D2574180-4674-4174-B690-4CE878F18546}">
+															<Language>SFX</Language>
+															<AudioFile>Wood_Chunks_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="468295359"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Chunks_1" ID="{D2574180-4674-4174-B690-4CE878F18546}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence 2" ID="{7073736D-650C-48B8-9939-44605CC0202D}" ShortID="942909023">
+													<PropertyList>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-96</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood_Chunks_1" ID="{DE2D198B-4B33-486F-B71F-7E08C9B8B341}">
+															<Language>SFX</Language>
+															<AudioFile>Wood_Chunks_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="468295359"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ObjectLists/>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood_Chunks_1" ID="{DE2D198B-4B33-486F-B71F-7E08C9B8B341}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -8637,13 +8563,7 @@
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Axe Swing" ID="{A0532F0C-8B02-4211-8AD7-139FA54C8612}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
 										<ItemRef Name="Axe Hit Wood" ID="{E9769E89-64DD-480B-843B-163C5213BF3C}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="Axe Wood Break" ID="{6BD248A7-A675-46C9-947C-ABDA66A4B528}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Axe Hit Enemy" ID="{3DD473A8-81ED-48C7-AEFF-AAB884796690}"/>
@@ -8654,6 +8574,194 @@
 								</GroupingBehaviorList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<RandomSequenceContainer Name="Axe Swing" ID="{A0532F0C-8B02-4211-8AD7-139FA54C8612}" ShortID="868860221">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2B01D8F0-1AD6-418E-8ACE-5E4FBA6712E8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8FADE5B8-1ED6-4032-9788-79698AEDE69B}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="40"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{97F5084E-C9EC-4962-9058-2AFC969967A5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{DD98ACF3-269D-4DDE-B99F-65173C51D1E3}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Axe_Swing" ID="{0746C8A2-5280-4061-BE5C-8A462182C796}" ShortID="777707508">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1C847C12-579B-4180-B6C2-72363CE8F02E}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="15"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{64985BCD-D1D0-4CC2-992A-204427B575EE}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="25"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F3A24C06-ED47-4602-8B6A-1822696BA769}">
+														<PropertyList>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4FC94131-BD5A-4565-8802-CC4558324D55}">
+														<PropertyList>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Axe_Swing" ID="{28B10B1D-706F-4E52-8AE8-8F91BFEB37DF}">
+											<Language>SFX</Language>
+											<AudioFile>Axe_Swing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="340838024"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="Axe_Swing" ID="{28B10B1D-706F-4E52-8AE8-8F91BFEB37DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ending SFX" ID="{D335A487-A5EF-4F2F-933E-90F4BC26D173}" ShortID="293497540">
+					<ChildrenList>
+						<Sound Name="Good_Ending_SFX" ID="{750B7FE2-D831-4EE6-8448-CFA223D22E02}" ShortID="33337479">
+							<PropertyList>
+								<Property Name="GameAuxSendVolume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Good_Ending_SFX" ID="{4D73F84D-FBEB-49F7-A7E7-4CC454F24CC2}">
+									<Language>SFX</Language>
+									<AudioFile>Good_Ending_SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="648246599"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Good_Ending_SFX" ID="{4D73F84D-FBEB-49F7-A7E7-4CC454F24CC2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
