@@ -177,6 +177,7 @@
 									<ChildrenList>
 										<Switch Name="Wood" ID="{C5196C48-3D97-49A7-AB68-91747D784AAB}"/>
 										<Switch Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+										<Switch Name="Grass" ID="{514511B2-401C-45CC-B068-ACF7E40ED6A3}"/>
 									</ChildrenList>
 									<SwitchOnRTPC>
 										<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
@@ -193,6 +194,11 @@
 												<Point>
 													<XPos>2</XPos>
 													<YPos>2</YPos>
+													<Flags>0</Flags>
+												</Point>
+												<Point>
+													<XPos>3</XPos>
+													<YPos>3</YPos>
 													<Flags>37</Flags>
 												</Point>
 											</PointList>

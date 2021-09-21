@@ -12,6 +12,10 @@
 								<State Name="Death" ID="{D38B038D-A977-436F-86C0-E9BA2000ACCD}"/>
 								<State Name="Ambient" ID="{0DD2B4CF-CF59-4829-9306-C3424BE57286}"/>
 								<State Name="Secret_Room" ID="{8BD190FA-603E-4ADF-AA82-7E3181E575C2}"/>
+								<State Name="Outside" ID="{2F834C8E-8769-412A-AA0B-CAEE59C7307B}"/>
+								<State Name="Menu" ID="{2194FC87-C620-4604-9628-0FD0395046D1}"/>
+								<State Name="Good_Ending" ID="{22469BE9-DC6F-43D4-8602-646234B6948E}"/>
+								<State Name="Bad_Ending" ID="{B771CD2E-02B1-45DA-8CA0-F19926C9F697}"/>
 							</ChildrenList>
 						</StateGroup>
 					</ChildrenList>

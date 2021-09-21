@@ -152,20 +152,36 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Death_Music" ID="{259B1B4B-F0BB-45BB-B559-98FDEFF4A820}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<ObjectRef Name="Play_Secret_Room_Music" ID="{F88E7B71-EDB2-4B54-A910-0D10DE78C056}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Secret_Room_Music" ID="{F88E7B71-EDB2-4B54-A910-0D10DE78C056}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<ObjectRef Name="Death_Music" ID="{259B1B4B-F0BB-45BB-B559-98FDEFF4A820}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Pause_Menu_On" ID="{1EEA2C35-CF47-4DE4-970D-01F1CA90621D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<ObjectRef Name="Play_Menu_Music" ID="{10DB1C94-3385-4EF7-9F79-6DC3B6E62093}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Outside_Music_Event" ID="{B22EC091-D54C-4D64-8161-FBD928B47720}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Pause_Menu_Off" ID="{1D2EA4D8-8F95-463F-B34C-942756B6A6F4}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<ObjectRef Name="Good_Ending_Music" ID="{A307C887-8595-451C-A18A-1BBC981830B0}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Bad_Ending_Music" ID="{73997908-7EFE-4EE0-BFB2-3ABD8D1B6BB7}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pause_Menu_On" ID="{1EEA2C35-CF47-4DE4-970D-01F1CA90621D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Pause_Menu_Off" ID="{1D2EA4D8-8F95-463F-B34C-942756B6A6F4}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -183,7 +199,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
-							<Value>3</Value>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
@@ -199,7 +215,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Death" ID="{D38B038D-A977-436F-86C0-E9BA2000ACCD}"/>
+						<CurrentStateRef Name="Menu" ID="{2194FC87-C620-4604-9628-0FD0395046D1}"/>
 						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -396,11 +412,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
-							<Value>1</Value>
+							<Value>1.09566764389372E-317</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Ambient" ID="{0DD2B4CF-CF59-4829-9306-C3424BE57286}"/>
+						<CurrentStateRef Name="Menu" ID="{2194FC87-C620-4604-9628-0FD0395046D1}"/>
 						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -610,6 +626,61 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Depleted_Stamina" ID="{B4961FCD-077E-44DF-BF72-394D556844D6}"/>
+						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
+						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
+						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
+						<CurrentSwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
+						<CurrentSwitchRef Name="Enemy_Chase" ID="{47D35F06-535A-43DA-9281-2310875114C4}"/>
+						<CurrentSwitchRef Name="Tile" ID="{38737005-98F9-45B5-BCCC-371C3B0246F0}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Outdoors Test" ID="{279B6D37-E010-4F66-AE8D-0CB4980DF419}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Outdoor_Ambience" ID="{CFE19BEF-3343-44FB-B3B6-421D272C14F9}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Bad_Ending_SFX" ID="{CAE7DD27-BE13-47A4-8634-AAF44D5D73F9}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Num_of_Keys" ID="{BCDE13FB-DF0B-42F1-BD82-B08F16729477}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Enemy_Footsteps_Surface_Type" ID="{D7FB0E6B-FCBC-458F-8683-6B715A943E17}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Downstairs_Upstairs_Stairwell" ID="{C92AFED8-E982-4BC0-B908-89B873559265}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Footsteps_Surface_Type" ID="{C60A4364-61E3-4F82-955F-3FEB56BB9A3C}"/>
+							<Value>2</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Menu" ID="{2194FC87-C620-4604-9628-0FD0395046D1}"/>
+						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="High_Stamina" ID="{EE647FF4-6D0C-4CA4-8CDC-5D22A58471C6}"/>
 						<CurrentSwitchRef Name="Crouching" ID="{EB205A80-C83D-48D6-B36B-95E26206343D}"/>
 						<CurrentSwitchRef Name="Downstairs" ID="{5060CC3F-421B-4AE0-A468-8DA736EBF6AC}"/>
 						<CurrentSwitchRef Name="lvl1" ID="{5868C0B2-16B7-4E9F-B46A-2978619117BC}"/>
