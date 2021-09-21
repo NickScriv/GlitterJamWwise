@@ -6,6 +6,7 @@
 				<SoundBank Name="Music" ID="{D6BD6737-B537-4029-B8F8-E9F5D841D110}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RvbZone_Outside" ID="{F9BA754E-70BA-49A3-9FF5-D1F00124949B}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Good Ending Music" ID="{23CAD9C6-5F37-4DEA-BA6D-B55AF0831017}" WorkUnitID="{95AE92E2-3E88-4A1C-8118-BE9B457DAB28}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
@@ -15,6 +16,7 @@
 				<SoundBank Name="SFX" ID="{194B0103-C401-4E77-93A4-065120B354EE}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Default Work Unit" ID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RvbZone_Outside" ID="{F9BA754E-70BA-49A3-9FF5-D1F00124949B}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
