@@ -35,8 +35,12 @@ State	ID	Name	State Group			Notes
 	2595709632	Passive	Enemy_Sounds_States			
 	77978275	Ambient	Music_Sections			
 	417490929	Chase	Music_Sections			
+	438105790	Outside	Music_Sections			
+	589883976	Good_Ending	Music_Sections			
 	748895195	None	Music_Sections			
 	779278001	Death	Music_Sections			
+	2222736396	Bad_Ending	Music_Sections			
+	2607556080	Menu	Music_Sections			
 	2973900265	Secret_Room	Music_Sections			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
