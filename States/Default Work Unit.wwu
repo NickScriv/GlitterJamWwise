@@ -27,6 +27,17 @@
 						<State Name="Chase" ID="{EFE4A368-3C66-4FDB-BE33-42A77285E523}"/>
 					</ChildrenList>
 				</StateGroup>
+				<Folder Name="Ambience" ID="{1285F632-F6B3-4146-9B6D-45007A4D5D49}" ShortID="726763240">
+					<ChildrenList>
+						<StateGroup Name="Indoor_Outdoor_Ambience" ID="{5C4A7390-44CD-4B9D-BD95-F7AD03872E87}">
+							<ChildrenList>
+								<State Name="None" ID="{9DE98639-0C7B-4694-B59B-63F30EA4FBD9}"/>
+								<State Name="Indoor" ID="{46436CF4-1E97-427E-84F2-D20E41AE1DF3}"/>
+								<State Name="Outdoor" ID="{D22F3BDD-9962-4D8A-B466-564154CD7854}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

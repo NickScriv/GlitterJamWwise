@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="198374347">
+		<SoundBank Id="393239870" Language="SFX" Hash="2952095784">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -55,11 +55,11 @@
 				<Event Id="3668695751" Name="Play_Enemy_Footstep" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Play_Enemy_Footstep"/>
 				<Event Id="3793582191" Name="Play_Enemy_Passive_Sounds" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Play_Enemy_Passive_Sounds"/>
 				<Event Id="1602358412" Name="Play_Footstep" ObjectPath="\Events\Default Work Unit\SFX Events\Footsteps\Play_Footstep"/>
-				<Event Id="1060106358" Name="Play_Indoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Indoor Ambience\Play_Indoor_Ambience"/>
+				<Event Id="1060106358" Name="Play_Indoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Play_Indoor_Ambience"/>
 				<Event Id="1225062921" Name="Play_Lights_Power_Off" ObjectPath="\Events\Default Work Unit\SFX Events\Lights\Play_Lights_Power_Off"/>
 				<Event Id="523050301" Name="Play_Lights_Power_On" ObjectPath="\Events\Default Work Unit\SFX Events\Lights\Play_Lights_Power_On"/>
 				<Event Id="3124987295" Name="Play_Lock_Picking" ObjectPath="\Events\Default Work Unit\SFX Events\Lock Pick\Play_Lock_Picking"/>
-				<Event Id="3795145933" Name="Play_Outdoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Outdoor Ambience\Play_Outdoor_Ambience"/>
+				<Event Id="3795145933" Name="Play_Outdoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Play_Outdoor_Ambience"/>
 				<Event Id="219100449" Name="Player_Kills_Enemy" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Player_Kills_Enemy"/>
 				<Event Id="3626210482" Name="Put_Down_Note" ObjectPath="\Events\Default Work Unit\SFX Events\Notes\Put_Down_Note"/>
 				<Event Id="1474002183" Name="Safe_Close" ObjectPath="\Events\Default Work Unit\SFX Events\Safe\Safe_Close"/>
@@ -70,9 +70,7 @@
 				<Event Id="3140010222" Name="Stamina_Depleted" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stamina_Depleted"/>
 				<Event Id="1047608429" Name="Start_Run" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Start_Run"/>
 				<Event Id="3638328809" Name="Stop_Door_Unlocking" ObjectPath="\Events\Default Work Unit\SFX Events\Doors\Stop_Door_Unlocking"/>
-				<Event Id="2473162048" Name="Stop_Indoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Indoor Ambience\Stop_Indoor_Ambience"/>
 				<Event Id="21842589" Name="Stop_Lock_Picking" ObjectPath="\Events\Default Work Unit\SFX Events\Lock Pick\Stop_Lock_Picking"/>
-				<Event Id="2431981779" Name="Stop_Outdoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Outdoor Ambience\Stop_Outdoor_Ambience"/>
 				<Event Id="2141040177" Name="Stop_Run_Gentle" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stop_Run_Gentle"/>
 				<Event Id="377921503" Name="Stop_Run_Heavy" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stop_Run_Heavy"/>
 				<Event Id="1208240901" Name="UI_Scroll" ObjectPath="\Events\Default Work Unit\UI Events\UI_Scroll"/>
@@ -206,6 +204,10 @@
 					<ShortName>Enemy_fs_tile_1.wav</ShortName>
 					<Path>SFX/Enemy_fs_tile_1_10C4C929.wem</Path>
 				</File>
+				<File Id="280951500" Language="SFX">
+					<ShortName>grass_fs_run_3.wav</ShortName>
+					<Path>SFX/grass_fs_run_3_10C4C929.wem</Path>
+				</File>
 				<File Id="285136759" Language="SFX">
 					<ShortName>Flashlight_On.wav</ShortName>
 					<Path>SFX/Flashlight_On_10C4C929.wem</Path>
@@ -217,6 +219,10 @@
 				<File Id="301772476" Language="SFX">
 					<ShortName>Key_Acquired_1.wav</ShortName>
 					<Path>SFX/Key_Acquired_1_10C4C929.wem</Path>
+				</File>
+				<File Id="311689646" Language="SFX">
+					<ShortName>grass_fs_walk_2.wav</ShortName>
+					<Path>SFX/grass_fs_walk_2_10C4C929.wem</Path>
 				</File>
 				<File Id="336853172" Language="SFX">
 					<ShortName>Shotgun_Empty_1.wav</ShortName>
@@ -261,6 +267,10 @@
 				<File Id="391406086" Language="SFX">
 					<ShortName>tile_fs_run_3.wav</ShortName>
 					<Path>SFX/tile_fs_run_3_10C4C929.wem</Path>
+				</File>
+				<File Id="409382740" Language="SFX">
+					<ShortName>grass_fs_walk_3.wav</ShortName>
+					<Path>SFX/grass_fs_walk_3_10C4C929.wem</Path>
 				</File>
 				<File Id="411798552" Language="SFX">
 					<ShortName>Pickup_Note_1.wav</ShortName>
@@ -426,6 +436,10 @@
 					<ShortName>Low_Door_Open_3.wav</ShortName>
 					<Path>SFX/Low_Door_Open_3_6742F08F.wem</Path>
 				</File>
+				<File Id="746416713" Language="SFX">
+					<ShortName>grass_fs_run_1.wav</ShortName>
+					<Path>SFX/grass_fs_run_1_10C4C929.wem</Path>
+				</File>
 				<File Id="759301855" Language="SFX">
 					<ShortName>Stop_Med_Stamina.wav</ShortName>
 					<Path>SFX/Stop_Med_Stamina_10C4C929.wem</Path>
@@ -453,6 +467,10 @@
 				<File Id="809688070" Language="SFX">
 					<ShortName>Caution_var_4.wav</ShortName>
 					<Path>SFX/Caution_var_4_10C4C929.wem</Path>
+				</File>
+				<File Id="812108379" Language="SFX">
+					<ShortName>grass_fs_run_2.wav</ShortName>
+					<Path>SFX/grass_fs_run_2_10C4C929.wem</Path>
 				</File>
 				<File Id="822052185" Language="SFX">
 					<ShortName>Enemy_fs_wood_4.wav</ShortName>
@@ -558,6 +576,10 @@
 					<ShortName>tile_fs_crouch_5.wav</ShortName>
 					<Path>SFX/tile_fs_crouch_5_10C4C929.wem</Path>
 				</File>
+				<File Id="1018933306" Language="SFX">
+					<ShortName>grass_fs_walk_1.wav</ShortName>
+					<Path>SFX/grass_fs_walk_1_10C4C929.wem</Path>
+				</File>
 				<File Id="1023230645" Language="SFX">
 					<ShortName>High_Door_Open_3.wav</ShortName>
 					<Path>SFX/High_Door_Open_3_1ECCD5CF.wem</Path>
@@ -641,7 +663,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="114489645">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2895266143">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

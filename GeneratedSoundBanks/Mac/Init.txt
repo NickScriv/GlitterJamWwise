@@ -26,17 +26,25 @@ Switch	ID	Name	Switch Group			Notes
 	4248645337	Grass	Footsteps_Surface_Type			
 
 State Group	ID	Name			Wwise Object Path	Notes
+	1691645244	Indoor_Outdoor_Ambience			\Default Work Unit\Ambience\Indoor_Outdoor_Ambience	
 	1870834283	Enemy_Sounds_States			\Default Work Unit\Enemy_Sounds_States	
 	3388762225	Music_Sections			\Default Work Unit\Music States\Music_Sections	
 
 State	ID	Name	State Group			Notes
+	144697359	Outdoor	Indoor_Outdoor_Ambience			
+	340398852	Indoor	Indoor_Outdoor_Ambience			
+	748895195	None	Indoor_Outdoor_Ambience			
 	417490929	Chase	Enemy_Sounds_States			
 	748895195	None	Enemy_Sounds_States			
 	2595709632	Passive	Enemy_Sounds_States			
 	77978275	Ambient	Music_Sections			
 	417490929	Chase	Music_Sections			
+	438105790	Outside	Music_Sections			
+	589883976	Good_Ending	Music_Sections			
 	748895195	None	Music_Sections			
 	779278001	Death	Music_Sections			
+	2222736396	Bad_Ending	Music_Sections			
+	2607556080	Menu	Music_Sections			
 	2973900265	Secret_Room	Music_Sections			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
