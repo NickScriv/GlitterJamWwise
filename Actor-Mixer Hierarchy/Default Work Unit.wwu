@@ -954,6 +954,12 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
+												<SwitchRef Name="Grass" ID="{514511B2-401C-45CC-B068-ACF7E40ED6A3}"/>
+												<ItemList>
+													<ItemRef Name="Grass Run" ID="{9AA912C0-FCF8-4E53-8A94-7B59EA4483E0}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
 												<ItemList>
 													<ItemRef Name="Tile Run" ID="{23EB047A-3E9B-4106-AF95-931E6990C6FD}"/>
@@ -1410,6 +1416,12 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
+												<SwitchRef Name="Grass" ID="{514511B2-401C-45CC-B068-ACF7E40ED6A3}"/>
+												<ItemList>
+													<ItemRef Name="Grass Crouch" ID="{AA8B5A72-32A3-4C54-A809-50D4AAEC0AAE}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Tile" ID="{FA1479BE-7011-449F-AC77-7A040EF11367}"/>
 												<ItemList>
 													<ItemRef Name="Tile Crouch" ID="{55D8A7D3-440B-47E4-9158-0B92917B0551}"/>
@@ -1830,6 +1842,12 @@
 												<SwitchRef Name="Wood" ID="{C5196C48-3D97-49A7-AB68-91747D784AAB}"/>
 												<ItemList>
 													<ItemRef Name="Wood Walk" ID="{94F8EE84-45F9-40F1-937E-902AE2A45C73}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Grass" ID="{514511B2-401C-45CC-B068-ACF7E40ED6A3}"/>
+												<ItemList>
+													<ItemRef Name="Grass Walk" ID="{F6127C01-4902-4880-A5E7-75A9007F53E2}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -3251,6 +3269,7 @@
 					<ChildrenList>
 						<SwitchContainer Name="Enemy Footstep Switch" ID="{288057F2-7E6B-46E6-B4FA-56B823F6A37F}" ShortID="26639442">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -3681,6 +3700,7 @@
 						</SwitchContainer>
 						<BlendContainer Name="Enemy Passive" ID="{2D7A30B1-7C7A-4BBF-90AD-4BB8A904627E}" ShortID="130937121">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{1CCBFF81-816C-44AC-AD3E-5C15DD6AAD6F}" ShortID="210335914">
@@ -4238,6 +4258,7 @@
 						</BlendContainer>
 						<BlendContainer Name="Enemy Chase" ID="{1F4C74E3-3606-406C-8474-4FE91F1E9556}" ShortID="751803857">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{F3C49DBC-249A-4CDB-BE14-44DF8E59766F}" ShortID="655523398">
@@ -4789,6 +4810,7 @@
 						</BlendContainer>
 						<BlendContainer Name="Enemy Caution" ID="{388BF51C-D4EA-468C-941A-B9A5E3F1020D}" ShortID="991376775">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Lowpass" Type="int16">
 									<RTPCList>
 										<RTPC Name="" ID="{51B3E013-3CED-4510-B31C-C31A580B7B4B}" ShortID="134669035">
@@ -5770,6 +5792,7 @@
 						</BlendContainer>
 						<Sound Name="Player_Kills_Enemy" ID="{8D4FDC50-1F33-4FBB-AE23-13FBD67D9F7D}" ShortID="241479141">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -5845,7 +5868,6 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -5944,6 +5966,12 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<RTPCList>
 										<RTPC Name="" ID="{9315B662-F32E-47C1-A88D-FE56D7A91384}" ShortID="447631989">
@@ -5972,7 +6000,11 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>2</Value>
@@ -6859,6 +6891,7 @@
 					<ChildrenList>
 						<Sound Name="Drawer_Open" ID="{B4573804-389D-48CA-BC92-584C4E307404}" ShortID="779197048">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Highpass" Type="int16">
 									<ModifierList>
 										<ModifierInfo>
@@ -6914,6 +6947,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Door Distance" ID="{CB13C813-9C6A-4B69-8994-85D716CEAC2C}" WorkUnitID="{F7AB6CE3-48B4-4EC1-B779-1BCD87220FB6}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
 								</Reference>
@@ -6937,6 +6973,7 @@
 						</Sound>
 						<Sound Name="Drawer_Close" ID="{CA2D86EE-8CFD-45F2-BABE-54DFB25B47D4}" ShortID="990403023">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Highpass" Type="int16">
 									<ModifierList>
 										<ModifierInfo>
@@ -6992,6 +7029,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Door Distance" ID="{CB13C813-9C6A-4B69-8994-85D716CEAC2C}" WorkUnitID="{F7AB6CE3-48B4-4EC1-B779-1BCD87220FB6}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
 								</Reference>

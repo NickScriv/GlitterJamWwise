@@ -413,76 +413,62 @@
 						</Folder>
 						<Folder Name="Ambience" ID="{0A1AAE32-7EC4-4BEB-82D1-0F089CDA83C6}" ShortID="901309335">
 							<ChildrenList>
-								<Folder Name="Indoor Ambience" ID="{02B95F06-F4CC-4A61-8A25-B3D743E5B454}" ShortID="696271766">
+								<Event Name="Play_Outdoor_Ambience" ID="{CFE19BEF-3343-44FB-B3B6-421D272C14F9}">
 									<ChildrenList>
-										<Event Name="Play_Indoor_Ambience" ID="{52F7582A-D585-4BC4-BF58-0C0862805AFC}">
-											<ChildrenList>
-												<Action Name="" ID="{DD864E35-BD02-49CF-BFC4-6174D5A93A83}" ShortID="80219322">
-													<PropertyList>
-														<Property Name="FadeInCurve" Type="int16" Value="0"/>
-														<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Indoor_Ambience" ID="{8955BBE4-4FCD-4677-9BF4-3FD1F4D06754}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Stop_Indoor_Ambience" ID="{0B502352-C59A-403F-8602-F6674BAEAF5B}">
-											<ChildrenList>
-												<Action Name="" ID="{755A0B9A-2754-4F2B-BFB9-1DD52FCBCEA3}" ShortID="451085315">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="2"/>
-														<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-														<Property Name="Scope" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Indoor_Ambience" ID="{8955BBE4-4FCD-4677-9BF4-3FD1F4D06754}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
+										<Action Name="" ID="{1CE84DED-DB8E-4594-9360-8B8F77BDD89A}" ShortID="656439597">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Indoor_Ambience" ID="{8955BBE4-4FCD-4677-9BF4-3FD1F4D06754}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{C89692F3-6FFF-40A6-A0DD-08F2E625A48A}" ShortID="685347582">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Outdoor Ambience" ID="{2F3A44AE-419D-48AF-A641-B50AF216701F}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
-								</Folder>
-								<Folder Name="Outdoor Ambience" ID="{04EF4347-1D08-4985-95EF-0A66DCEA4549}" ShortID="613778452">
+								</Event>
+								<Event Name="Play_Indoor_Ambience" ID="{52F7582A-D585-4BC4-BF58-0C0862805AFC}">
 									<ChildrenList>
-										<Event Name="Play_Outdoor_Ambience" ID="{CFE19BEF-3343-44FB-B3B6-421D272C14F9}">
-											<ChildrenList>
-												<Action Name="" ID="{C89692F3-6FFF-40A6-A0DD-08F2E625A48A}" ShortID="685347582">
-													<PropertyList>
-														<Property Name="FadeInCurve" Type="int16" Value="0"/>
-														<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Outdoor Ambience" ID="{2F3A44AE-419D-48AF-A641-B50AF216701F}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Stop_Outdoor_Ambience" ID="{C7F0A23D-77CB-4278-8A22-6CFDF5A7B6B6}">
-											<ChildrenList>
-												<Action Name="" ID="{2039F310-23C3-4E68-98E3-BF4BDB60277D}" ShortID="379354143">
-													<PropertyList>
-														<Property Name="ActionType" Type="int16" Value="2"/>
-														<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-														<Property Name="Scope" Type="int16" Value="1"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Indoor_Ambience" ID="{8955BBE4-4FCD-4677-9BF4-3FD1F4D06754}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
+										<Action Name="" ID="{33E515A2-22A5-4554-AB99-3836ADD4A729}" ShortID="963762544">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Outdoor Ambience" ID="{2F3A44AE-419D-48AF-A641-B50AF216701F}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{DD864E35-BD02-49CF-BFC4-6174D5A93A83}" ShortID="80219322">
+											<PropertyList>
+												<Property Name="FadeInCurve" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Indoor_Ambience" ID="{8955BBE4-4FCD-4677-9BF4-3FD1F4D06754}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
-								</Folder>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Lights" ID="{678E4D93-2EE8-4E53-BCDA-F6BDA79B99DA}" ShortID="479297938">
