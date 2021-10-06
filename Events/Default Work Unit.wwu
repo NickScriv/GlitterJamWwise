@@ -473,23 +473,12 @@
 						</Folder>
 						<Folder Name="Lights" ID="{678E4D93-2EE8-4E53-BCDA-F6BDA79B99DA}" ShortID="479297938">
 							<ChildrenList>
-								<Event Name="Play_Lights_Power_Off" ID="{58E81C8F-27C4-44A0-AB6D-CE2DA9F4A003}">
+								<Event Name="Lights_Flicker_Off" ID="{0853579D-A889-4F66-BD42-CAEF2990EE85}">
 									<ChildrenList>
-										<Action Name="" ID="{C44B14CB-436D-44B9-B099-A502B245FC57}" ShortID="46634304">
+										<Action Name="" ID="{BAF119D9-955B-4C40-A091-13075B7A29E0}" ShortID="68193808">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Lights_Power_Off" ID="{6F4E1931-E78F-4154-96A8-31FD045E2DBB}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_Lights_Power_On" ID="{A42285B7-6C48-4174-951F-77D41D6C8FCF}">
-									<ChildrenList>
-										<Action Name="" ID="{434DD4D0-11F4-44F7-9881-45D2DF850CBF}" ShortID="486748185">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Lights_Power_On" ID="{4571FF23-6F9F-436F-933F-E917E68EEEFE}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+													<ObjectRef Name="Lights_Flicker_Off" ID="{D415F987-A948-4C09-97DD-F3B712C161ED}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -696,17 +685,6 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Safe_Close" ID="{1886F2EC-52FB-47AC-BFD4-49B7A0D6AC92}">
-									<ChildrenList>
-										<Action Name="" ID="{B104C19E-9252-419F-9443-FC891A1DBF0B}" ShortID="185974963">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Safe Close" ID="{E5318CFE-CB56-4A76-ADAB-FF19BB29C6CF}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
 								<Event Name="Safe_Locked" ID="{04245AF4-FE28-476D-88E0-E6C3AD8906BF}">
 									<ChildrenList>
 										<Action Name="" ID="{A4EE9DD0-335C-4D4D-872F-4D8BD0A70D7A}" ShortID="172393701">
@@ -783,54 +761,39 @@
 						</Folder>
 						<Folder Name="Axe" ID="{B7D05930-5EAC-44C0-9E9F-28126B9F76B1}" ShortID="211028054">
 							<ChildrenList>
-								<Event Name="Axe_Swing" ID="{9D5B4F3E-8F3D-466F-BEB6-9B077FE6EF6E}">
+								<Event Name="Axe_Hit_Wood" ID="{0F83B289-5058-45DB-BF6D-E0E386EB9075}">
 									<ChildrenList>
-										<Action Name="" ID="{C6E8D632-C997-4B3B-B595-47940501D2C9}" ShortID="614414733">
+										<Action Name="" ID="{81DD79A8-B05A-4EF4-9DA6-34884E420D86}" ShortID="966783203">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Axe Swing" ID="{A0532F0C-8B02-4211-8AD7-139FA54C8612}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+													<ObjectRef Name="Axe Hit Wood" ID="{E9769E89-64DD-480B-843B-163C5213BF3C}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Folder Name="Axe Hit Surfaces" ID="{56D395A6-E372-4C50-9F9D-C13F45C184F6}" ShortID="599152241">
+								<Event Name="Axe_Hit_Generic_Object" ID="{9CE75E33-075E-4EFD-B863-239939D71EBB}">
 									<ChildrenList>
-										<Event Name="Axe_Hit_Wood" ID="{0F83B289-5058-45DB-BF6D-E0E386EB9075}">
-											<ChildrenList>
-												<Action Name="" ID="{81DD79A8-B05A-4EF4-9DA6-34884E420D86}" ShortID="966783203">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Axe Hit Wood" ID="{E9769E89-64DD-480B-843B-163C5213BF3C}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Axe_Hit_Generic_Object" ID="{9CE75E33-075E-4EFD-B863-239939D71EBB}">
-											<ChildrenList>
-												<Action Name="" ID="{032619C9-BF21-4C4A-93E0-A5A506AE531F}" ShortID="76412768">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Axe Hit GenericObject" ID="{4516E7AA-65B4-4B58-961D-99BF98C12E6B}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
-										<Event Name="Axe_Hit_Enemy" ID="{758F7A7D-DDBB-4DD1-9410-FFE2F712C303}">
-											<ChildrenList>
-												<Action Name="" ID="{43593993-A09B-41EB-BB49-FE16C2009694}" ShortID="567746814">
-													<ReferenceList>
-														<Reference Name="Target">
-															<ObjectRef Name="Axe Hit Enemy" ID="{3DD473A8-81ED-48C7-AEFF-AAB884796690}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-														</Reference>
-													</ReferenceList>
-												</Action>
-											</ChildrenList>
-										</Event>
+										<Action Name="" ID="{032619C9-BF21-4C4A-93E0-A5A506AE531F}" ShortID="76412768">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Axe Hit GenericObject" ID="{4516E7AA-65B4-4B58-961D-99BF98C12E6B}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
-								</Folder>
+								</Event>
+								<Event Name="Axe_Hit_Enemy" ID="{758F7A7D-DDBB-4DD1-9410-FFE2F712C303}">
+									<ChildrenList>
+										<Action Name="" ID="{43593993-A09B-41EB-BB49-FE16C2009694}" ShortID="567746814">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Axe Hit Enemy" ID="{3DD473A8-81ED-48C7-AEFF-AAB884796690}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Endings" ID="{08296B3F-FE5A-4CAC-AFA6-0B50FCB407BE}" ShortID="575452760">
