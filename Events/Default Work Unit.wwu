@@ -696,6 +696,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Safe_Crank_Turn" ID="{7C667709-DA12-4FF0-B94B-D5930CAC1A55}">
+									<ChildrenList>
+										<Action Name="" ID="{62930AF6-F528-4CB0-B3F6-A9AF5D86B6F4}" ShortID="328560431">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Safe_Crank" ID="{76E41206-A6C9-4B83-A4AC-CE1D3D325962}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Lock Pick" ID="{78C284B5-C84B-4772-86FF-F1146FE90549}" ShortID="54701764">
