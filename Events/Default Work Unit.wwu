@@ -7,11 +7,99 @@
 					<ChildrenList>
 						<Folder Name="Stamina" ID="{6484E282-2D36-48CA-9EE1-6DE3B0DD4A47}" ShortID="488053105">
 							<ChildrenList>
-								<Event Name="Stop_Run_Heavy" ID="{CB9B2B08-644B-41B3-B402-B55D498A8D14}">
+								<Event Name="Start_Run" ID="{10BCB3EF-3368-4A2A-80C7-76C880E4F307}">
 									<ChildrenList>
-										<Action Name="" ID="{1CA151EC-A5F7-41E9-AD51-2EA2AD64E344}" ShortID="2117435">
+										<Action Name="" ID="{955FEA56-9F05-4424-BAD4-39C24E2DB699}" ShortID="896178210">
 											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="ActionType" Type="int16" Value="5"/>
+												<Property Name="FadeTime" Type="Real64" Value="2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Heavy Breathing Switch" ID="{86830CF9-2B18-4010-8E07-98047902EC76}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{7484760A-6F7E-43BE-B43A-803B3ECCE3EB}" ShortID="260385231">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="4"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Run Stop Switch" ID="{83AE4632-33A7-421A-BC08-6E2AD5A37324}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{3C20C8B4-2B83-49AE-B4F0-B6040A155B1B}" ShortID="106128138">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="4"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Depleted Stamina" ID="{6D4D6C8B-FC39-40A0-B76A-8CFCF9EF1B91}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stamina_Delpeted" ID="{38DA7EDF-FECB-4906-8E51-933BDADF02DD}">
+									<ChildrenList>
+										<Action Name="" ID="{E30536D9-CAB2-4934-9070-0B5A3F45211E}" ShortID="124267526">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="4"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Run Stop Switch" ID="{83AE4632-33A7-421A-BC08-6E2AD5A37324}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{91A63F13-80B3-441E-9BD1-218FDF1863AD}" ShortID="699976141">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="4"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Heavy Breathing Switch" ID="{86830CF9-2B18-4010-8E07-98047902EC76}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9C5180F2-008A-448C-B2D0-DC3E7500FF52}" ShortID="478546535">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="5"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="8"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Depleted Stamina" ID="{6D4D6C8B-FC39-40A0-B76A-8CFCF9EF1B91}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8B1091DD-FF33-417B-AF52-83BD04443DB9}" ShortID="525010041">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Depleted Stamina" ID="{6D4D6C8B-FC39-40A0-B76A-8CFCF9EF1B91}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_Run_Heavy" ID="{0E92843D-0ADD-4C32-A9C1-EDD9542919C3}">
+									<ChildrenList>
+										<Action Name="" ID="{F495A847-D55A-4616-A52C-D2BE73F7CF5A}" ShortID="1636680">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="4"/>
 												<Property Name="FadeTime" Type="Real64" Value="0.25"/>
 												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
@@ -21,10 +109,20 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{7F863B5A-609F-408B-ACEB-F54DA8549D10}" ShortID="713461918">
+										<Action Name="" ID="{F342BCF7-FF26-4DAA-9C08-6E488AEAC4DF}" ShortID="381198346">
 											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="5"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="8"/>
 												<Property Name="FadeTime" Type="Real64" Value="0.25"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Run Stop Switch" ID="{83AE4632-33A7-421A-BC08-6E2AD5A37324}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{7EBF3AB9-5928-4D21-BE41-E8180CDD4C40}" ShortID="841171574">
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Run Stop Switch" ID="{83AE4632-33A7-421A-BC08-6E2AD5A37324}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
@@ -33,11 +131,12 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Start_Run" ID="{7A5D9177-CD5C-45C9-8A3C-CF39C974BA91}">
+								<Event Name="STAMINA_START_ON_LOAD" ID="{06144AE1-98A2-4F6B-BF62-2F2813A7638D}">
 									<ChildrenList>
-										<Action Name="" ID="{9BCAADAD-289A-47F2-9DF3-B203D47CD4BB}" ShortID="737993194">
+										<Action Name="" ID="{657FA6AC-5392-4C23-92CB-3EFBF71EE755}" ShortID="168464511">
 											<PropertyList>
-												<Property Name="FadeTime" Type="Real64" Value="3"/>
+												<Property Name="ActionType" Type="int16" Value="4"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -45,10 +144,10 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{A8A65223-B0EF-4BBC-B473-344ADF9E4EFC}" ShortID="894599655">
+										<Action Name="" ID="{4A54E933-D87F-47B6-AABA-3271873E84AF}" ShortID="143551166">
 											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+												<Property Name="ActionType" Type="int16" Value="4"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -56,25 +155,9 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{6CBA909F-72ED-4AEB-A40E-DD560E760E8F}" ShortID="511549370">
+										<Action Name="" ID="{2208CBFF-4430-4A06-8656-86B6F5BB68A7}" ShortID="800966476">
 											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.4"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Depleted Stamina" ID="{6D4D6C8B-FC39-40A0-B76A-8CFCF9EF1B91}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Stamina_Depleted" ID="{9453805A-7BA8-484F-8DD5-EB32530DB029}">
-									<ChildrenList>
-										<Action Name="" ID="{15752BAA-0BB0-4B08-9763-80C6A01641EE}" ShortID="873017899">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-												<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+												<Property Name="Delay" Type="Real64" Value="1"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
@@ -82,30 +165,13 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{B632041A-AFBF-4653-9100-61593891A88C}" ShortID="1055190075">
-											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Run Stop Switch" ID="{83AE4632-33A7-421A-BC08-6E2AD5A37324}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-										<Action Name="" ID="{B69FE113-C6B1-4D50-9C6C-7A26B7EACA91}" ShortID="536653368">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Depleted Stamina" ID="{6D4D6C8B-FC39-40A0-B76A-8CFCF9EF1B91}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Stop_Run_Gentle" ID="{34F59536-F606-4845-9B21-81D659E96B1D}">
+								<Event Name="Stop_Run_Gentle" ID="{7266B1C2-973C-40EC-A9CB-FEA082223684}">
 									<ChildrenList>
-										<Action Name="" ID="{6447B863-4490-439A-A192-5FEDE7D0B35A}" ShortID="671307182">
+										<Action Name="" ID="{A4FF3E6D-CD03-450F-9F1A-0A813E36008F}" ShortID="508731315">
 											<PropertyList>
-												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="ActionType" Type="int16" Value="4"/>
 												<Property Name="FadeOutCurve" Type="int16" Value="8"/>
 												<Property Name="FadeTime" Type="Real64" Value="2.5"/>
 												<Property Name="Scope" Type="int16" Value="1"/>
@@ -113,6 +179,19 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Heavy Breathing Switch" ID="{86830CF9-2B18-4010-8E07-98047902EC76}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{B893AED7-A173-45BC-9E3D-228A43BC9B1F}" ShortID="85787530">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="4"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="8"/>
+												<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Run Stop Switch" ID="{83AE4632-33A7-421A-BC08-6E2AD5A37324}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

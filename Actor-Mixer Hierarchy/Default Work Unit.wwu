@@ -27,7 +27,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-13</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{154F89D2-66D6-4CA4-B6DA-30663C81F1AD}" ShortID="725491300">
@@ -290,7 +290,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-13</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -336,7 +336,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-13</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{410E729A-E2B5-48AD-A741-4A5AF9E3E341}" ShortID="544650981">

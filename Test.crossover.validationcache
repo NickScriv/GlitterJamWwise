@@ -31,10 +31,10 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Virtual Acoustics\Default Work Unit.wwu" DateLow="1623348726" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Triggers\Default Work Unit.wwu" DateLow="1624111896" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Test.wproj" DateLow="1623348726" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Test.crossover.wsettings" DateLow="1633461312" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Test.crossover.wsettings" DateLow="1636448793" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Switches\Default Work Unit.wwu" DateLow="1632423481" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\States\Default Work Unit.wwu" DateLow="1632423481" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1632423839" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1636448790" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\SoundBanks\Default Work Unit.wwu" DateLow="1632204128" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Queries\Factory Queries.wwu" DateLow="1623348726" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Queries\Default Work Unit.wwu" DateLow="1623348726" DateHigh="0"/>
@@ -46,7 +46,7 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1631782592" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1632424087" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Game Parameters\Default Work Unit.wwu" DateLow="1632423481" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Events\Default Work Unit.wwu" DateLow="1633461235" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Events\Default Work Unit.wwu" DateLow="1636448790" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Effects\Factory Effects.wwu" DateLow="1631782592" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Effects\Default Work Unit.wwu" DateLow="1623348726" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1623348726" DateHigh="0"/>
@@ -54,6 +54,6 @@
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Conversion Settings\Default Work Unit.wwu" DateLow="1623348726" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="1623348726" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Audio Devices\Default Work Unit.wwu" DateLow="1623348726" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Attenuations\Default Work Unit.wwu" DateLow="1629667720" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1633461235" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Attenuations\Default Work Unit.wwu" DateLow="1635798250" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\GitHub\GlitterJamWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1636398826" DateHigh="0"/>
 </ValidationCache>
