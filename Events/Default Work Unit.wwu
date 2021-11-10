@@ -47,7 +47,7 @@
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Stamina_Delpeted" ID="{38DA7EDF-FECB-4906-8E51-933BDADF02DD}">
+								<Event Name="Stamina_Depleted" ID="{38DA7EDF-FECB-4906-8E51-933BDADF02DD}">
 									<ChildrenList>
 										<Action Name="" ID="{E30536D9-CAB2-4934-9070-0B5A3F45211E}" ShortID="124267526">
 											<PropertyList>

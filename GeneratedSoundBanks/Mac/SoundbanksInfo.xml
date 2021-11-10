@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3306855830">
+		<SoundBank Id="393239870" Language="SFX" Hash="2001606289">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -65,7 +65,7 @@
 				<Event Id="189348657" Name="Safe_Open" ObjectPath="\Events\Default Work Unit\SFX Events\Safe\Safe_Open"/>
 				<Event Id="2627359935" Name="Shotgun_Empty" ObjectPath="\Events\Default Work Unit\SFX Events\Shotgun\Shotgun_Empty"/>
 				<Event Id="3982195600" Name="Shotgun_Fire" ObjectPath="\Events\Default Work Unit\SFX Events\Shotgun\Shotgun_Fire"/>
-				<Event Id="2793045486" Name="Stamina_Delpeted" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stamina_Delpeted"/>
+				<Event Id="3140010222" Name="Stamina_Depleted" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Stamina_Depleted"/>
 				<Event Id="3280195082" Name="STAMINA_START_ON_LOAD" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\STAMINA_START_ON_LOAD"/>
 				<Event Id="1047608429" Name="Start_Run" ObjectPath="\Events\Default Work Unit\SFX Events\Stamina\Start_Run"/>
 				<Event Id="3638328809" Name="Stop_Door_Unlocking" ObjectPath="\Events\Default Work Unit\SFX Events\Doors\Stop_Door_Unlocking"/>

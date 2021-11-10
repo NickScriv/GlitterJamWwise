@@ -26,7 +26,7 @@
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stamina_Delpeted" ID="{38DA7EDF-FECB-4906-8E51-933BDADF02DD}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<ObjectRef Name="Stamina_Depleted" ID="{38DA7EDF-FECB-4906-8E51-933BDADF02DD}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="3" Y="3"/>
 						</Module>
 					</ModuleList>
