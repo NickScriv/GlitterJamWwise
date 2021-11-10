@@ -6,24 +6,28 @@
 				<SoundcasterSession Name="Stamina Test" ID="{73AF9D63-8BC0-4282-8CBB-38C4A5451BA6}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Start_Run" ID="{7A5D9177-CD5C-45C9-8A3C-CF39C974BA91}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_Footstep" ID="{6FF9E56B-326E-4027-A182-39BD0D6884EE}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
-							<Position X="0" Y="2"/>
+							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Run_Gentle" ID="{34F59536-F606-4845-9B21-81D659E96B1D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
-							<Position X="1" Y="0"/>
+							<ObjectRef Name="STAMINA_START_ON_LOAD" ID="{06144AE1-98A2-4F6B-BF62-2F2813A7638D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Run_Heavy" ID="{CB9B2B08-644B-41B3-B402-B55D498A8D14}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
-							<Position X="1" Y="1"/>
+							<ObjectRef Name="Start_Run" ID="{10BCB3EF-3368-4A2A-80C7-76C880E4F307}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stamina_Depleted" ID="{9453805A-7BA8-484F-8DD5-EB32530DB029}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
-							<Position X="2" Y="0"/>
+							<ObjectRef Name="Stop_Run_Gentle" ID="{7266B1C2-973C-40EC-A9CB-FEA082223684}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Run_Heavy" ID="{0E92843D-0ADD-4C32-A9C1-EDD9542919C3}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stamina_Delpeted" ID="{38DA7EDF-FECB-4906-8E51-933BDADF02DD}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="3" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -36,6 +40,10 @@
 							<Value>2</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Indoor_Outdoor_Ambience" ID="{D099088E-8E09-4A8B-94A9-D3895D7C0D29}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
 							<Value>2</Value>
 						</RTPCValue>
@@ -45,7 +53,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
-							<Value>53</Value>
+							<Value>3</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>
@@ -58,6 +66,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Chase" ID="{3D8EBFBE-378E-4664-9EA3-7798E4D24468}"/>
+						<CurrentStateRef Name="None" ID="{9DE98639-0C7B-4694-B59B-63F30EA4FBD9}"/>
 						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -400,6 +409,10 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Indoor_Outdoor_Ambience" ID="{D099088E-8E09-4A8B-94A9-D3895D7C0D29}"/>
+							<Value>2</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Footsteps_Movement_Type" ID="{D38044B2-8C46-4AB4-9371-E0C0F1F34547}"/>
 							<Value>2</Value>
 						</RTPCValue>
@@ -422,6 +435,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Menu" ID="{2194FC87-C620-4604-9628-0FD0395046D1}"/>
+						<CurrentStateRef Name="None" ID="{9DE98639-0C7B-4694-B59B-63F30EA4FBD9}"/>
 						<CurrentStateRef Name="Passive" ID="{870B9DCB-FA86-4379-A475-FE7D4C85E1E5}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -436,22 +450,6 @@
 				</SoundcasterSession>
 				<SoundcasterSession Name="Player SFX Test" ID="{455BADD4-5B10-4DCE-9C87-E6790EF067AD}">
 					<ModuleList>
-						<Module>
-							<ObjectRef Name="Start_Run" ID="{7A5D9177-CD5C-45C9-8A3C-CF39C974BA91}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Stamina_Depleted" ID="{9453805A-7BA8-484F-8DD5-EB32530DB029}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Stop_Run_Gentle" ID="{34F59536-F606-4845-9B21-81D659E96B1D}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Stop_Run_Heavy" ID="{CB9B2B08-644B-41B3-B402-B55D498A8D14}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
-							<Position X="1" Y="1"/>
-						</Module>
 						<Module>
 							<ObjectRef Name="Play_Footstep" ID="{6FF9E56B-326E-4027-A182-39BD0D6884EE}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="2" Y="0"/>
@@ -728,7 +726,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Stamina_Level" ID="{C5EDC7B4-0D9A-4D04-AA89-252DA4C7DDBE}"/>
-							<Value>100</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Danger_Warning" ID="{1D3FCBB6-32D6-4EBB-B2AB-4FB44924948D}"/>

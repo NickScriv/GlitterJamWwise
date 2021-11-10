@@ -27,12 +27,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	2179654399	Pause_Menu_Off			\Default Work Unit\Music Events\Pause_Menu_Off	
 	2627359935	Shotgun_Empty			\Default Work Unit\SFX Events\Shotgun\Shotgun_Empty	
 	2774129122	UI_Select			\Default Work Unit\UI Events\UI_Select	
+	2793045486	Stamina_Delpeted			\Default Work Unit\SFX Events\Stamina\Stamina_Delpeted	
 	2854523811	Safe_Locked			\Default Work Unit\SFX Events\Safe\Safe_Locked	
 	3039021168	Drawers_Open			\Default Work Unit\SFX Events\Drawers\Drawers_Open	
 	3113414775	Death_Enemy_Sounds			\Default Work Unit\SFX Events\Enemy\Death_Enemy_Sounds	
 	3124987295	Play_Lock_Picking			\Default Work Unit\SFX Events\Lock Pick\Play_Lock_Picking	
-	3140010222	Stamina_Depleted			\Default Work Unit\SFX Events\Stamina\Stamina_Depleted	
 	3237721180	Play_Chase_Music			\Default Work Unit\Music Events\Play_Chase_Music	
+	3280195082	STAMINA_START_ON_LOAD			\Default Work Unit\SFX Events\Stamina\STAMINA_START_ON_LOAD	
 	3358299437	Pick_Up_Note			\Default Work Unit\SFX Events\Notes\Pick_Up_Note	
 	3483621035	Pause_Menu_On			\Default Work Unit\Music Events\Pause_Menu_On	
 	3626210482	Put_Down_Note			\Default Work Unit\SFX Events\Notes\Put_Down_Note	
