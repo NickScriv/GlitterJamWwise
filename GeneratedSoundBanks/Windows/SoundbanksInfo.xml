@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="2001606289">
+		<SoundBank Id="393239870" Language="SFX" Hash="233998273">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -59,6 +59,7 @@
 				<Event Id="3124987295" Name="Play_Lock_Picking" ObjectPath="\Events\Default Work Unit\SFX Events\Lock Pick\Play_Lock_Picking"/>
 				<Event Id="3795145933" Name="Play_Outdoor_Ambience" ObjectPath="\Events\Default Work Unit\SFX Events\Ambience\Play_Outdoor_Ambience"/>
 				<Event Id="219100449" Name="Player_Kills_Enemy" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Player_Kills_Enemy"/>
+				<Event Id="1064328332" Name="Player_Spotted" ObjectPath="\Events\Default Work Unit\SFX Events\Enemy\Player_Spotted"/>
 				<Event Id="3626210482" Name="Put_Down_Note" ObjectPath="\Events\Default Work Unit\SFX Events\Notes\Put_Down_Note"/>
 				<Event Id="976763844" Name="Safe_Crank_Turn" ObjectPath="\Events\Default Work Unit\SFX Events\Safe\Safe_Crank_Turn"/>
 				<Event Id="2854523811" Name="Safe_Locked" ObjectPath="\Events\Default Work Unit\SFX Events\Safe\Safe_Locked"/>
@@ -218,6 +219,10 @@
 				<File Id="311689646" Language="SFX">
 					<ShortName>grass_fs_walk_2.wav</ShortName>
 					<Path>SFX/grass_fs_walk_2_10C4C929.wem</Path>
+				</File>
+				<File Id="320633789" Language="SFX">
+					<ShortName>Player_Spotted.wav</ShortName>
+					<Path>SFX/Player_Spotted_10C4C929.wem</Path>
 				</File>
 				<File Id="336853172" Language="SFX">
 					<ShortName>Shotgun_Empty_1.wav</ShortName>

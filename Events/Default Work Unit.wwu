@@ -488,6 +488,56 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Player_Spotted" ID="{4BDD90C6-13D7-4D85-9A82-BE18C469AED5}">
+									<ChildrenList>
+										<Action Name="" ID="{4A487059-4375-47F0-96FF-FFE478D720C2}" ShortID="189162178">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy Caution" ID="{388BF51C-D4EA-468C-941A-B9A5E3F1020D}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2B3A7215-C218-4943-B3D5-AA217F6F2295}" ShortID="862881710">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy Chase" ID="{1F4C74E3-3606-406C-8474-4FE91F1E9556}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F6E41346-6A0F-495D-B309-7C58FBF42A5F}" ShortID="270220153">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+												<Property Name="Scope" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Enemy Passive" ID="{2D7A30B1-7C7A-4BBF-90AD-4BB8A904627E}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{FAB070F1-6219-4A81-9703-067E223D69FD}" ShortID="363672655">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Player_Spotted" ID="{EE57DA44-05E5-457F-9B74-EC1E9D4725DD}" WorkUnitID="{EF333945-E7B9-4BC5-ACBB-A94335C6FEAA}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Ambience" ID="{0A1AAE32-7EC4-4BEB-82D1-0F089CDA83C6}" ShortID="901309335">

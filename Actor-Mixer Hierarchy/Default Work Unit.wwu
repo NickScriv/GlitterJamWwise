@@ -5822,6 +5822,50 @@
 								<ActiveSource Name="Player_Kills_Enemy" ID="{45751CE6-0573-429E-B40B-64711FDD47C8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Player_Spotted" ID="{EE57DA44-05E5-457F-9B74-EC1E9D4725DD}" ShortID="1055785481">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{24859840-4CF9-4C2B-873D-747FC903D296}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+													<Property Name="Min" Type="Real64" Value="-20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{172C6D31-83E0-4A82-BD7E-36641071FF94}" WorkUnitID="{2251FE95-380C-4475-9587-6BE4F51FFDC9}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Player_Spotted" ID="{F60C1B5D-778F-41B7-8EEC-A87934C42E3B}">
+									<Language>SFX</Language>
+									<AudioFile>Player_Spotted.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="320633789"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Player_Spotted" ID="{F60C1B5D-778F-41B7-8EEC-A87934C42E3B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Ambiences" ID="{8FFE4FAC-7BB8-4042-A0FD-E02390F460C2}" ShortID="322259252">
