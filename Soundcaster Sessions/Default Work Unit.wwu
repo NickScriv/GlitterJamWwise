@@ -398,6 +398,10 @@
 							<ObjectRef Name="Death_Music" ID="{259B1B4B-F0BB-45BB-B559-98FDEFF4A820}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
 							<Position X="2" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Player_Spotted" ID="{4BDD90C6-13D7-4D85-9A82-BE18C469AED5}" WorkUnitID="{23A7ABF8-8813-4CE4-8CAD-F460B1CE32E9}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
