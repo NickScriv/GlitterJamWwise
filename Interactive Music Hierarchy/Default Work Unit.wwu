@@ -32,7 +32,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-12</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{3601D3DC-0C64-4DA7-85B1-27AA737A9E79}" ShortID="18384855">
@@ -2085,7 +2085,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="17434.4169847967"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-11</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{0E1F38C9-C422-44FB-AFEE-D092F19EBB95}" ShortID="1003122929">
@@ -2264,7 +2264,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="13266.6354410617"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2690,6 +2690,9 @@
 							<PropertyList>
 								<Property Name="Tempo" Type="Real64" Value="122"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{C79BC280-9A40-4C4D-9CE6-75BB97DA9759}" ShortID="697206907">
 											<ReferenceList>
