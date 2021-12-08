@@ -25,7 +25,7 @@
 											<XPos>20</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
-											<SegmentShape>Log2</SegmentShape>
+											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>1000</XPos>
@@ -130,7 +130,7 @@
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>125</XPos>
+											<XPos>102.44846</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
@@ -191,7 +191,7 @@
 				</Attenuation>
 				<Attenuation Name="MonsterScream" ID="{5CB2CE72-21C0-48B8-B20B-A85AABFCDA16}" ShortID="266740574">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="7000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="8000"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -207,13 +207,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>339.27577</XPos>
+											<XPos>2000</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
-											<SegmentShape>Log2</SegmentShape>
+											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7000</XPos>
+											<XPos>8000</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -240,13 +240,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>358.77437</XPos>
+											<XPos>410.027851428571</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7000</XPos>
+											<XPos>8000</XPos>
 											<YPos>50</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -281,12 +281,6 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Log3</SegmentShape>
-										</Point>
-										<Point>
-											<XPos>151.81059</XPos>
-											<YPos>-0</YPos>
-											<Flags>0</Flags>
 											<SegmentShape>Log2</SegmentShape>
 										</Point>
 										<Point>

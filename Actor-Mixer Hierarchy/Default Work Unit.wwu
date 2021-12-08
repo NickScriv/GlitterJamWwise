@@ -715,6 +715,13 @@
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Tile Run" ID="{23EB047A-3E9B-4106-AF95-931E6990C6FD}" ShortID="1004803267">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
@@ -1150,6 +1157,13 @@
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Tile Crouch" ID="{55D8A7D3-440B-47E4-9158-0B92917B0551}" ShortID="142700766">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
@@ -1606,6 +1620,13 @@
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Tile Walk" ID="{CB6CD5E1-828C-45FD-9837-21C01A316C2C}" ShortID="147411282">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
@@ -3772,7 +3793,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="Enemy Distance" ID="{0EB0C987-C7B1-4D03-ABB4-3570F61E4B61}" WorkUnitID="{F7AB6CE3-48B4-4EC1-B779-1BCD87220FB6}"/>
+									<ObjectRef Name="MonsterVocal" ID="{A2B2280B-73A5-4E50-9836-E46C2A57FC0A}" WorkUnitID="{F7AB6CE3-48B4-4EC1-B779-1BCD87220FB6}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
@@ -4331,7 +4352,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="Enemy Distance" ID="{0EB0C987-C7B1-4D03-ABB4-3570F61E4B61}" WorkUnitID="{F7AB6CE3-48B4-4EC1-B779-1BCD87220FB6}"/>
+									<ObjectRef Name="MonsterVocal" ID="{A2B2280B-73A5-4E50-9836-E46C2A57FC0A}" WorkUnitID="{F7AB6CE3-48B4-4EC1-B779-1BCD87220FB6}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
@@ -4884,7 +4905,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="Enemy Distance" ID="{0EB0C987-C7B1-4D03-ABB4-3570F61E4B61}" WorkUnitID="{F7AB6CE3-48B4-4EC1-B779-1BCD87220FB6}"/>
+									<ObjectRef Name="MonsterVocal" ID="{A2B2280B-73A5-4E50-9836-E46C2A57FC0A}" WorkUnitID="{F7AB6CE3-48B4-4EC1-B779-1BCD87220FB6}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{36714617-3747-40BC-A75B-BE85CAF603F8}"/>
@@ -7888,7 +7909,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-4</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -7970,7 +7991,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
