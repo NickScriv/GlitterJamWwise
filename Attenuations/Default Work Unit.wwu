@@ -205,11 +205,6 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
-										</Point>
-										<Point>
-											<XPos>2000</XPos>
-											<YPos>0</YPos>
-											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
@@ -228,7 +223,7 @@
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 						</VolumeWetUserUsage>
 						<LowPassFilterUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
 								<Curve Name="LowPassFilter" ID="{15D79350-C068-4BE9-8A77-EE12FF760FDB}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="65537"/>

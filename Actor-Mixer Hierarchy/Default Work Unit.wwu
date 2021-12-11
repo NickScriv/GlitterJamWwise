@@ -5853,6 +5853,7 @@
 						<Sound Name="Player_Spotted" ID="{EE57DA44-05E5-457F-9B74-EC1E9D4725DD}" ShortID="1055785481">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -6784,6 +6785,9 @@
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{7EEFD668-A664-47A5-AD47-738EE8B4AEE0}">
